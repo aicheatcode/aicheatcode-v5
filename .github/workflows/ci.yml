@@ -21,7 +21,7 @@ jobs:
           run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.16.0'
+          node-version: '24.22.1'
           cache: pnpm
       - name: Install dependencies from lockfile
         run: pnpm install --frozen-lockfile
@@ -50,7 +50,7 @@ jobs:
           if-no-files-found: warn
   production-smoke:
     needs: validate
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && vars.PRODUCTION_URL != ''
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
