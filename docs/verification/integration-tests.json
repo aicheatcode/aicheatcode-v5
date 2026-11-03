@@ -1,0 +1,306 @@
+[
+  {
+    "id": "REG-01",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/tentang",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/privasi",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar/study-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar/prompt-pertama",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar/poster-jelas",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar/brief-visual",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/belajar/semakan-jenama",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/motion-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/toolkit-showcase",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/learning-path",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/aiman-maryam",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/matematik",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/creative-hub",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/prompt-playground",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/arab-draf",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/prompt-pendidik",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/fokus",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/prompt-rasmi-mudah",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/prompt-collection",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/katalog-digital",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/belajar-arab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/courses-free-ai",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/study-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/visual-resume",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/prompt-bank",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/canva",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/aisecret",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/card-swap",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/resources",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/portfolio",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/halloween",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-ms-/projek/telegram",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/tentang",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/privasi",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar/study-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar/prompt-pertama",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar/poster-jelas",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar/brief-visual",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/belajar/semakan-jenama",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/motion-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/toolkit-showcase",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/learning-path",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/aiman-maryam",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/matematik",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/creative-hub",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/prompt-playground",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/arab-draf",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/prompt-pendidik",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/fokus",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/prompt-rasmi-mudah",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/prompt-collection",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/katalog-digital",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/belajar-arab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/courses-free-ai",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/study-lab",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/visual-resume",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/prompt-bank",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/canva",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/aisecret",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/card-swap",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/resources",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/portfolio",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/halloween",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-en-/projek/telegram",
+    "status": "PASS"
+  },
+  {
+    "id": "SSR-unknown",
+    "status": "PASS"
+  },
+  {
+    "id": "SEC-encoding",
+    "status": "PASS"
+  },
+  {
+    "id": "REG-no-fake-demo",
+    "status": "PASS"
+  },
+  {
+    "id": "DATA-preserved",
+    "status": "PASS"
+  },
+  {
+    "id": "STUDY-input-safety",
+    "status": "PASS"
+  }
+]

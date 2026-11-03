@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const page=readFileSync(new URL('../lib/site-response.ts',import.meta.url),'utf8');
+const editor=readFileSync(new URL('../app/api/editor/route.ts',import.meta.url),'utf8');
+test('sitemap canonical URLs exclude language query parameters',()=>{assert.match(page,/new Set\(\[\.\.\.publicPaths/);assert.doesNotMatch(page,/flatMap\(p=>\['','\?lang=en'\]/);});
+test('sitemap deduplicates paths',()=>assert.match(page,/new Set/));
+test('security headers present',()=>{for(const name of ['X-Frame-Options','Permissions-Policy','X-Content-Type-Options'])assert.ok(page.includes(name));});
+test('unknown prompt detail responds 404',()=>assert.match(page,/else return new Response\('Not Found',\{status:404/));
+test('editor rejects cross-origin writes',()=>assert.match(editor,/get\('origin'\)!==new URL\(r.url\).origin/));

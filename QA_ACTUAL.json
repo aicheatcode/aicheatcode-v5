@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-11-03T12:08:40.735452+00:00",
+  "materialized_prompt_rows": 1071,
+  "virtual_catalog_declared": 100000,
+  "virtual_catalog_groups": 500,
+  "duplicate_materialized_ids": 0,
+  "public_asset_files": 25,
+  "missing_local_static_links": [
+    {
+      "file": "admin.html",
+      "link": "/"
+    },
+    {
+      "file": "admin.html",
+      "link": "/"
+    },
+    {
+      "file": "admin.html",
+      "link": "/signin-with-chatgpt?return_to=%2Fadmin.html"
+    },
+    {
+      "file": "admin.html",
+      "link": "/?legacy=1"
+    }
+  ],
+  "editor_auth": "HMAC signed trusted gateway required; fail closed",
+  "build": "NOT TESTED",
+  "server_http": "NOT TESTED",
+  "database_production": "NOT TESTED",
+  "deployment": "NOT TESTED",
+  "local_tests": {
+    "test-catalog": "PASS",
+    "test-integration": "PASS (76 checks)",
+    "test-editor": "PASS",
+    "test-repaired-flows": "PASS",
+    "sqlite_integrity_check": "PASS",
+    "zip_integrity": "PASS"
+  },
+  "static_link_note": "Root and signin links are application routes, not necessarily missing static assets; requires HTTP test."
+}

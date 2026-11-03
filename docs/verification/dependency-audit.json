@@ -1,0 +1,1 @@
+{"status":"BLOCKED","command":"pnpm audit --prod --json","exit_code":1,"actual":"No machine-readable audit result returned; vulnerability status is unknown.","dependency_inputs_changed":false}

@@ -1,0 +1,10 @@
+{
+  "sql_integrity": "PASS",
+  "imported_records": 1071,
+  "distinct_ids": 1071,
+  "manifest_records": 4,
+  "d1_schema_and_seed": "PASS",
+  "production": "NOT TESTED",
+  "build": "NOT TESTED",
+  "browser": "NOT TESTED"
+}

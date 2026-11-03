@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_name": "AICHEATCODE_100000_Prompt.csv",
+  "records_compared": 100000,
+  "mismatched_rows": [],
+  "sha256": "5a36b7cdce82d76ae222e2dd7418e7637b90b4c0d38026916db227e544fb2272",
+  "expected_sha256": "5a36b7cdce82d76ae222e2dd7418e7637b90b4c0d38026916db227e544fb2272",
+  "scope": "All source CSV prompt text and metadata compared with reconstructed catalog; AI effectiveness not tested"
+}

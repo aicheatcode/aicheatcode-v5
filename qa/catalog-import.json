@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source": "AICHEATCODE_100000_Prompt.csv",
+  "sourceSha256": "5a36b7cdce82d76ae222e2dd7418e7637b90b4c0d38026916db227e544fb2272",
+  "sourceRows": 100000,
+  "uniqueTexts": 100000,
+  "emptyTexts": 0,
+  "verbatimReconstructionsVerified": 100000,
+  "existingDuplicatesRetainedByLegacyId": 500,
+  "newPrompts": 99500,
+  "existingPrompts": 1070,
+  "combinedUniquePromptsBeforeOwnerEdits": 100570,
+  "csvCategories": 9,
+  "csvSubcategories": 50,
+  "catalogBytes": 141188,
+  "modelEffectiveness": "NOT TESTED",
+  "officialDeveloperAttribution": "NOT VERIFIED — uploaded CSV contains no official source URLs"
+}

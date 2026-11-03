@@ -1,0 +1,68 @@
+name: AICHEATCODE V5 - Automated QA
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+          cache: pnpm
+      - name: Install dependencies from lockfile
+        run: pnpm install --frozen-lockfile
+      - name: SQLite verification
+        run: pnpm run test:sqlite
+      - name: Catalog tests
+        run: node scripts/test-catalog.mjs
+      - name: Integration tests
+        run: node scripts/test-integration.mjs
+      - name: Editor tests
+        run: node scripts/test-editor.mjs
+      - name: Prompt flows
+        run: node scripts/test-repaired-flows.mjs
+      - name: Server tests
+        run: node scripts/test-server.mjs
+      - name: Production build
+        run: pnpm run build
+      - name: Upload QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-evidence
+          path: |
+            docs/verification/
+            SQL_VALIDATION.json
+          if-no-files-found: warn
+  production-smoke:
+    needs: validate
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify production endpoint when configured
+        env:
+          PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
+        shell: bash
+        run: |
+          if [ -z "$PRODUCTION_URL" ]; then
+            echo 'NOT TESTED: PRODUCTION_URL repository variable is not configured'
+            exit 0
+          fi
+          curl --fail --show-error --silent --location --retry 3 --max-time 20 "$PRODUCTION_URL" -o /tmp/homepage.html
+          test -s /tmp/homepage.html
+          echo 'PASS: production HTTP endpoint returned nonempty content'

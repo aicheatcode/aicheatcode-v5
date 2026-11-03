@@ -1,0 +1,23 @@
+[
+  {
+    "foreground": "#131321",
+    "background": "#ffffff",
+    "ratio": 18.38,
+    "status": "PASS",
+    "scope": "Token calculation only; not full rendered-page accessibility audit"
+  },
+  {
+    "foreground": "#2e25d9",
+    "background": "#ffffff",
+    "ratio": 8.81,
+    "status": "PASS",
+    "scope": "Token calculation only; not full rendered-page accessibility audit"
+  },
+  {
+    "foreground": "#545462",
+    "background": "#ffffff",
+    "ratio": 7.44,
+    "status": "PASS",
+    "scope": "Token calculation only; not full rendered-page accessibility audit"
+  }
+]

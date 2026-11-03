@@ -1,0 +1,1 @@
+if(location.hostname!=='terminal.local')throw Error('QA local only');const nativeFetch=window.fetch;window.fetch=(input,init={})=>nativeFetch(input,{...init,headers:{...init.headers,'oai-authenticated-user-id':'local-qa-owner','oai-authenticated-user-email':'akhmalkadir05@gmail.com'}});

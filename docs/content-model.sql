@@ -1,0 +1,15 @@
+-- DESIGN ONLY. Not an applied production migration.
+PRAGMA foreign_keys = ON;
+CREATE TABLE content_categories (category_id TEXT PRIMARY KEY, slug TEXT UNIQUE NOT NULL, parent_id TEXT REFERENCES content_categories(category_id), label_ms TEXT NOT NULL, label_en TEXT NOT NULL);
+CREATE TABLE projects (project_id TEXT PRIMARY KEY, slug TEXT UNIQUE NOT NULL, name TEXT NOT NULL, category_id TEXT REFERENCES content_categories(category_id), status TEXT NOT NULL CHECK(status IN ('LIVE VERIFIED','LIVE UNVERIFIED','PROTOTYPE','IN DEVELOPMENT','ARCHIVED','UNKNOWN')), external_url TEXT, verified_at TEXT, content_json TEXT NOT NULL CHECK(json_valid(content_json)));
+CREATE TABLE project_evidence (evidence_id TEXT PRIMARY KEY, project_id TEXT NOT NULL REFERENCES projects(project_id), evidence_type TEXT NOT NULL, asset_reference TEXT, actual_result TEXT NOT NULL, verification_status TEXT NOT NULL CHECK(verification_status IN ('VERIFIED','PARTIALLY VERIFIED','ILLUSTRATIVE','NOT TESTED')), verified_at TEXT, environment TEXT NOT NULL);
+CREATE INDEX evidence_project ON project_evidence(project_id,verified_at);
+CREATE TABLE prompt_sources (source_id TEXT PRIMARY KEY, source_url TEXT UNIQUE, publisher TEXT, licence_note TEXT, verified_at TEXT);
+CREATE TABLE prompts (prompt_id TEXT PRIMARY KEY, title TEXT NOT NULL, category_id TEXT REFERENCES content_categories(category_id), source_id TEXT REFERENCES prompt_sources(source_id), ai_provider TEXT, authenticity_status TEXT NOT NULL CHECK(authenticity_status IN ('OFFICIAL','COMMUNITY','AICHEATCODE ORIGINAL','ADAPTED','UNVERIFIED')), language TEXT, verified_at TEXT);
+CREATE INDEX prompt_category ON prompts(category_id,authenticity_status);
+CREATE TABLE prompt_versions (version_id TEXT PRIMARY KEY, prompt_id TEXT NOT NULL REFERENCES prompts(prompt_id), version INTEGER NOT NULL CHECK(version>0), original_prompt TEXT NOT NULL CHECK(length(trim(original_prompt))>0), sha256 TEXT NOT NULL, created_at TEXT NOT NULL, UNIQUE(prompt_id,version));
+CREATE TABLE tutorials (tutorial_id TEXT PRIMARY KEY, slug TEXT UNIQUE NOT NULL, pillar TEXT NOT NULL CHECK(pillar IN ('AI Prompt','Canva Tutorial','Creative AI','Brand Studio')), category_id TEXT REFERENCES content_categories(category_id), prompt_id TEXT REFERENCES prompts(prompt_id), project_id TEXT REFERENCES projects(project_id), content_json TEXT NOT NULL CHECK(json_valid(content_json)), content_status TEXT NOT NULL CHECK(content_status IN ('draft','reviewed','published')));
+CREATE TABLE learning_paths (path_id TEXT PRIMARY KEY, slug TEXT UNIQUE NOT NULL, title TEXT NOT NULL, audience TEXT, outcome TEXT);
+CREATE TABLE path_lessons (path_id TEXT REFERENCES learning_paths(path_id), tutorial_id TEXT REFERENCES tutorials(tutorial_id), lesson_order INTEGER NOT NULL CHECK(lesson_order>=0), PRIMARY KEY(path_id,tutorial_id), UNIQUE(path_id,lesson_order));
+-- Saved prompts remain browser-local in this release. Cross-device identity and
+-- authorization must be designed and approved before introducing shared saved data.

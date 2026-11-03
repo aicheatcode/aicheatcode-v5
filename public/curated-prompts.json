@@ -1,0 +1,15 @@
+[
+  {
+    "id": "USER-IA-001",
+    "title": "Seni bina maklumat dan navigasi laman web",
+    "category": "Reka Bentuk & Penjenamaan",
+    "type": "UI/UX & Prototaip",
+    "text": "Design the information architecture for a {website_type} serving {audience}.\nAvailable content and offers: {content_inventory}. Primary conversion: {primary_conversion}. Maximum preferred primary-nav items: {navigation_limit}.\nCreate a sitemap and navigation hierarchy that helps first-time visitors discover the right page with minimal confusion. Group pages by user intent, propose descriptive navigation labels, define parent-child relationships, and identify the best path from the homepage to the primary conversion. Distinguish required pages from optional future pages.\nOutput a tree-style sitemap, a page inventory with page purpose and unique content angle, recommended header/footer navigation, an internal-linking plan, and mobile navigation behavior. Flag duplicate or overlapping pages. Do not add pages only to target more keywords; every page needs a distinct audience need.",
+    "source": "Prompt dibekalkan oleh pemilik laman",
+    "location": "Tambahan pilihan pemilik · IA-001",
+    "recordType": "Prompt pilihan pemilik",
+    "testStatus": "NOT TESTED",
+    "qa": "Teks prompt dikekalkan seperti yang dibekalkan. Keberkesanan pada model AI belum diuji.",
+    "attribution": "Teks dibekalkan oleh pemilik laman; sumber penerbit lain tidak dinyatakan."
+  }
+]

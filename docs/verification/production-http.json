@@ -1,0 +1,82 @@
+[
+  {
+    "requested": "https://cannybrainy.com/",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/prompt",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/bina",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/panduan",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/koleksi",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/sumber-status",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/tentang",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/privasi",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/robots.txt",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/sitemap.xml",
+    "status": 403
+  },
+  {
+    "requested": "https://cannybrainy.com/not-a-real-page",
+    "status": 403
+  },
+  {
+    "requested": "https://aicheatcode-prompt-playground-1024.akhmalkadir05.chatgpt.site/",
+    "status": 403
+  },
+  {
+    "requested": "https://belajararabmudah.netlify.app/",
+    "url": "https://belajararabmudah.netlify.app/",
+    "status": 200,
+    "bytes": 10623077,
+    "sha256": "2a9eea301d1a601cc7a58b1e89c993c4184cc748c2262d2d62bc4e6f3a3e40db",
+    "title": [
+      "Belajar Arab dengan Mudah Guna AI | AI Cheat Code"
+    ],
+    "canonical": [],
+    "headers": {
+      "cache-control": "public,max-age=0,must-revalidate",
+      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+    }
+  },
+  {
+    "requested": "https://coursesfreeai.netlify.app/",
+    "url": "https://coursesfreeai.netlify.app/",
+    "status": 200,
+    "bytes": 185116,
+    "sha256": "0badd4f4586b07bfdd6c59bd9de5bd1cdbf5a2265a9b7c9a611cc6a9946bcc31",
+    "title": [
+      "AICHEATCODE \u2014 Free Tech Learning"
+    ],
+    "canonical": [],
+    "headers": {
+      "cache-control": "public,max-age=0,must-revalidate",
+      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-03T12:10:50.056Z",
+  "records": 100571,
+  "uniqueIds": 100571,
+  "duplicateIds": 0,
+  "uniqueTextHashes": 100571,
+  "duplicateTextGroups": 0,
+  "duplicateTitleGroups": 531,
+  "emptyRequired": 0,
+  "replacementCharacterRecords": 0,
+  "missingVerifiedSourceUrl": 100571,
+  "groupedTasks": 1071,
+  "files": {
+    "data.json": "1c591d054f268eb18a066439dfc3f49e785c1ed9a81939ee5140a9b95aecf2f0",
+    "prompt-catalog.json": "3e38a2e5765ec578c85fcb29ad3c3881d10174153be211d5909e7144fd9022de",
+    "curated-prompts.json": "231ab1ffba04dd6b404cd405f6cb693f7a7b95b996270bfc59af518924744693"
+  }
+}

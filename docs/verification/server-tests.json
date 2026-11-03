@@ -1,0 +1,50 @@
+[
+  {
+    "id": "HTTP-home",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-legacy",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-study",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-prompt-detail",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-private",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-invalid",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-invalid-project",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-invalid-prompt",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-robots",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-sitemap",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-safety",
+    "status": "PASS"
+  },
+  {
+    "id": "HTTP-EN",
+    "status": "PASS"
+  }
+]

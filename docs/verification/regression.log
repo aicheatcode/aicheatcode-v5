@@ -1,0 +1,20 @@
+{ pass: 76, fail: [] }
+[
+  { id: 'HTTP-home', status: 'PASS' },
+  { id: 'HTTP-legacy', status: 'PASS' },
+  { id: 'HTTP-study', status: 'PASS' },
+  { id: 'HTTP-prompt-detail', status: 'PASS' },
+  { id: 'HTTP-private', status: 'PASS' },
+  { id: 'HTTP-invalid', status: 'PASS' },
+  { id: 'HTTP-invalid-project', status: 'PASS' },
+  { id: 'HTTP-invalid-prompt', status: 'PASS' },
+  { id: 'HTTP-robots', status: 'PASS' },
+  { id: 'HTTP-sitemap', status: 'PASS' },
+  { id: 'HTTP-safety', status: 'PASS' },
+  { id: 'HTTP-EN', status: 'PASS' }
+]
+PASS: BM search returns genuine source content, grouped task counts, all variants retained, canonical variant lookup, draft reload, unchanged originals, builder restoration, filters, storage-failure fallback and input validation.
+search_average_ms 22
+PASS: full catalog, deduplication, first/last row, filters, combined search, pagination, statuses, existing IDs, owner overrides/deletion, private extras.
+PASS: imported draft isolation, first publication, previous publication retention and deletion through existing editor merge.
+PASS: original inventory, published edits, draft isolation, last publication, create/delete, category counts, URL/color/order validation.

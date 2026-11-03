@@ -1,0 +1,80 @@
+{
+  "sql_migrations": [
+    {
+      "file": "000_schema.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "001_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "002_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "003_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "004_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "005_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "006_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "007_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "008_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "009_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "010_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "011_seed.sql",
+      "status": "PASS"
+    },
+    {
+      "file": "099_manifest.sql",
+      "status": "PASS"
+    }
+  ],
+  "sql_count": 1071,
+  "unique_ids": 1071,
+  "integrity": "ok",
+  "search_AI_matches": 916,
+  "categories": [
+    [
+      "Prompt Engineering & AI",
+      170
+    ],
+    [
+      "Teknologi, Produk & Pembangunan",
+      129
+    ],
+    [
+      "Reka Bentuk & Penjenamaan",
+      121
+    ]
+  ],
+  "editor_table": true,
+  "npm_install": "BLOCKED: command timed out",
+  "build": "BLOCKED: dependencies unavailable",
+  "production_http": "NOT TESTED",
+  "remote_d1": "NOT TESTED",
+  "deployment": "NOT TESTED"
+}
