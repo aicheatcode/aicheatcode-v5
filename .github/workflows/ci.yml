@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   group: qa-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -35,10 +35,22 @@ jobs:
         run: node scripts/test-editor.mjs
       - name: Prompt flows
         run: node scripts/test-repaired-flows.mjs
+      - name: Cloudflare deployment safeguards
+        run: pnpm run test:cloudflare
       - name: Server tests
         run: node scripts/test-server.mjs
       - name: Production build
         run: pnpm run build
+      - name: Worker and local D1 HTTP integration
+        run: node scripts/test-d1-worker.mjs
+      - name: Package the verified Worker build
+        run: tar -czf worker-build.tar.gz dist
+      - name: Upload verified Worker build
+        uses: actions/upload-artifact@v4
+        with:
+          name: worker-build-${{ github.sha }}
+          path: worker-build.tar.gz
+          retention-days: 3
       - name: Upload QA evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,21 +60,77 @@ jobs:
             docs/verification/
             SQL_VALIDATION.json
           if-no-files-found: warn
-  production-smoke:
+  production-configuration:
     needs: validate
-    if: github.event_name != 'pull_request' && vars.PRODUCTION_URL != ''
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
+    environment: production
+    outputs:
+      ready: ${{ steps.credentials.outputs.ready }}
     steps:
-      - name: Verify production endpoint when configured
+      - name: Check required Cloudflare credentials
+        id: credentials
         env:
-          PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         shell: bash
         run: |
-          if [ -z "$PRODUCTION_URL" ]; then
-            echo 'NOT TESTED: PRODUCTION_URL repository variable is not configured'
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::BLOCKED: add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to GitHub Secrets.'
+            echo '## Cloudflare production: BLOCKED' >> "$GITHUB_STEP_SUMMARY"
+            echo 'Required Cloudflare secrets are missing. No database or Worker changes were attempted; production is not PASS.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          curl --fail --show-error --silent --location --retry 3 --max-time 20 "$PRODUCTION_URL" -o /tmp/homepage.html
-          test -s /tmp/homepage.html
-          echo 'PASS: production HTTP endpoint returned nonempty content'
+          echo 'ready=true' >> "$GITHUB_OUTPUT"
+  deploy-production:
+    needs: [validate, production-configuration]
+    if: needs.production-configuration.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    concurrency:
+      group: cloudflare-production
+      cancel-in-progress: false
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+    env:
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.1'
+          cache: pnpm
+      - name: Install the locked deployment tooling
+        run: pnpm install --frozen-lockfile
+      - name: Download the build that passed validation
+        uses: actions/download-artifact@v4
+        with:
+          name: worker-build-${{ github.sha }}
+      - name: Extract verified build
+        run: tar -xzf worker-build.tar.gz
+      - name: Provision D1, migrate, seed, deploy and test production
+        id: deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_D1_DATABASE_ID: ${{ vars.CLOUDFLARE_D1_DATABASE_ID }}
+          CLOUDFLARE_D1_DATABASE_NAME: ${{ vars.CLOUDFLARE_D1_DATABASE_NAME }}
+          CLOUDFLARE_WORKER_NAME: ${{ vars.CLOUDFLARE_WORKER_NAME }}
+          PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
+        run: pnpm run deploy:cloudflare
+      - name: Upload production verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-production-evidence
+          path: .cloudflare/production/report.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 7
