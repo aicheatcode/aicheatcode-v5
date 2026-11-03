@@ -9,10 +9,28 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const NAME = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/;
 
+export function normalizeApiToken(value) {
+  assert(typeof value === 'string' && value.trim(), 'CLOUDFLARE_API_TOKEN is required');
+  let token = value.trim();
+  const unquote = text => (/^(["']).*\1$/s.test(text) ? text.slice(1, -1).trim() : text);
+  token = unquote(token);
+  // Treat pasted verification examples as data; never execute them.
+  if (/\bcurl\b/i.test(token) && token.includes('api.cloudflare.com')) {
+    const candidates = [...token.matchAll(/Authorization\s*:\s*Bearer\s+([A-Za-z0-9._~+\/-]+=*)/gi)].map(match => match[1]);
+    assert(new Set(candidates).size === 1, 'Paste the single full Cloudflare API token value, not an ambiguous curl example');
+    token = candidates[0];
+  }
+  token = unquote(token.replace(/^Bearer\s+/i, '').trim());
+  assert(token && !/[\s"'`]/.test(token), 'CLOUDFLARE_API_TOKEN must contain the token value only; copy the full value from Cloudflare');
+  return token;
+}
+
 export class CloudflareClient {
   constructor({ accountId, token, fetchImpl = fetch, sleep = ms => new Promise(r => setTimeout(r, ms)) }) {
+    accountId = typeof accountId === 'string' ? accountId.trim() : accountId;
     assert(/^[a-f0-9]{32}$/i.test(accountId), 'CLOUDFLARE_ACCOUNT_ID must be a 32-character account identifier');
-    assert(typeof token === 'string' && token.length > 0, 'CLOUDFLARE_API_TOKEN is required');
+    token = normalizeApiToken(token);
+    assert(token !== accountId, 'CLOUDFLARE_API_TOKEN contains the Account ID; replace it with the full API token value from Cloudflare');
     Object.assign(this, { accountId, token, fetchImpl, sleep });
   }
   async request(path, { method = 'GET', body, readOnly = method === 'GET' } = {}) {
@@ -31,6 +49,9 @@ export class CloudflareClient {
       try { data = await response.json(); } catch { throw new Error(`Cloudflare API returned non-JSON (HTTP ${response.status})`); }
       if (!response.ok || data.success !== true) {
         const codes = (data.errors || []).map(e => e.code).filter(x => Number.isInteger(x)).join(',');
+        if ((data.errors || []).some(e => e.code === 9106)) {
+          throw new Error('Cloudflare rejected CLOUDFLARE_API_TOKEN (HTTP ' + response.status + ', code 9106: authentication failed). Replace that GitHub Secret with a valid full API token from Cloudflare.');
+        }
         throw new Error(`Cloudflare API rejected ${method} ${path.split('?')[0]} (HTTP ${response.status}, codes ${codes || 'unknown'})`);
       }
       return data.result;
@@ -101,6 +122,13 @@ function runWrangler(args, { capture = false } = {}) {
 export async function deployProduction() {
   const env = process.env;
   const client = new CloudflareClient({ accountId: env.CLOUDFLARE_ACCOUNT_ID, token: env.CLOUDFLARE_API_TOKEN });
+  // Wrangler must receive the same normalized credential as the REST client.
+  if (env.GITHUB_ACTIONS === 'true') {
+    console.log('::add-mask::' + client.token);
+    console.log('::add-mask::' + client.accountId);
+  }
+  env.CLOUDFLARE_API_TOKEN = client.token;
+  env.CLOUDFLARE_ACCOUNT_ID = client.accountId;
   const policy = JSON.parse(readFileSync(resolve(ROOT, 'wrangler.production.jsonc'), 'utf8'));
   const workerName = env.CLOUDFLARE_WORKER_NAME || policy.name;
   const databaseName = env.CLOUDFLARE_D1_DATABASE_NAME || policy.d1_databases[0].database_name;

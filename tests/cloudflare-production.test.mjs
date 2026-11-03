@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { CloudflareClient, prepareConfig, resolveDatabase } from '../scripts/deploy-cloudflare.mjs';
+import { CloudflareClient, normalizeApiToken, prepareConfig, resolveDatabase } from '../scripts/deploy-cloudflare.mjs';
 import { productionOrigin, smokeProduction } from '../scripts/cloudflare-smoke.mjs';
 
 const accountId = 'a'.repeat(32);
@@ -11,6 +11,27 @@ const id = '11111111-1111-4111-8111-111111111111';
 const name = 'aicheatcode-v5-production';
 const commit = 'b'.repeat(40);
 const reply = (result, status = 200) => Response.json({ success: status === 200, result, errors: status === 200 ? [] : [{ code: 10000 }] }, { status });
+
+test('copied token formatting is normalized without executing pasted commands', () => {
+  const token = 'test-only-cfat_token-value';
+  for (const value of [token, ' ' + token + '\n', 'Bearer ' + token, '"' + token + '"', "'Bearer " + token + "'", 'Bearer "' + token + '"']) {
+    assert.equal(normalizeApiToken(value), token);
+  }
+  const example = "curl https://api.cloudflare.com/client/v4/accounts/example/tokens/verify --header 'Authorization: Bearer " + token + "'";
+  assert.equal(normalizeApiToken(example), token);
+  assert.throws(() => normalizeApiToken(example + " --header 'Authorization: Bearer another-test-token'"), /ambiguous/);
+  assert.throws(() => normalizeApiToken('AICHEATCODE GitHub'), /token value only/);
+  assert.throws(() => new CloudflareClient({ accountId, token: accountId }), /contains the Account ID/);
+});
+
+test('authentication failure identifies the Secret to replace without exposing its value', async () => {
+  const token = 'test-only-cfat_token-value';
+  const client = new CloudflareClient({ accountId, token: 'Bearer ' + token, fetchImpl: async (_url, options) => {
+    assert.equal(options.headers.Authorization, 'Bearer ' + token);
+    return Response.json({ success: false, errors: [{ code: 9106 }] }, { status: 400 });
+  } });
+  await assert.rejects(client.request('/workers/subdomain'), error => /CLOUDFLARE_API_TOKEN/.test(error.message) && /9106/.test(error.message) && !error.message.includes(token));
+});
 
 test('existing D1 is reused without creating or overwriting a database', async () => {
   const calls = [];
