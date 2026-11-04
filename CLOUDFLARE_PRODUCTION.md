@@ -15,7 +15,7 @@ Environment secrets dalam **Settings → Environments → production** turut dis
 
 Token mesti boleh membaca/mengurus Worker dan mencipta/mengemas kini D1 dalam **akaun sasaran sahaja**. Untuk Worker baharu, gunakan hak Workers yang membenarkan penciptaan (Workers Admin pada skop produk akaun); Workers Editor untuk Worker sedia ada sahaja tidak semestinya boleh mencipta Worker baharu. D1 memerlukan hak Edit/Write untuk provision, migrasi dan import. Token tidak perlu mengurus DNS/Routes apabila menggunakan `workers.dev`. Semak keizinan semasa di dokumentasi Cloudflare di bawah.
 
-Pastikan akaun sudah mempunyai subdomain `workers.dev` di Cloudflare **Workers & Pages**. Pipeline membacanya melalui API; URL production tidak perlu diteka atau dimasukkan secara manual.
+Pipeline menggunakan subdomain `workers.dev` akaun yang sudah wujud. Jika API mengesahkan subdomain belum didaftarkan (404/10007), pipeline menyemak akses akaun Workers dan mendaftarkan nama stabil `aicheatcode-<hash akaun>` secara automatik, kemudian membaca semula hasilnya. Subdomain sedia ada dikekalkan. Ralat pengesahan atau ralat 404 lain tidak mencetuskan pendaftaran; permintaan tulis yang terganggu disemak melalui bacaan semula tanpa diulang. URL production diperoleh daripada hasil API sebenar.
 
 ## Variables pilihan
 
@@ -75,4 +75,5 @@ Prasyarat: artifact `dist` yang lulus QA, dua Secrets di atas, serta `GITHUB_SHA
 - https://developers.cloudflare.com/workers/wrangler/commands/d1/
 - https://developers.cloudflare.com/workers/authorization/workers/
 - https://developers.cloudflare.com/api/resources/workers/subresources/subdomains/methods/get/
+- https://developers.cloudflare.com/api/resources/workers/subresources/subdomains/methods/update/
 - https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets

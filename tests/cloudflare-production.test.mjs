@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { CloudflareClient, normalizeApiToken, prepareConfig, resolveDatabase } from '../scripts/deploy-cloudflare.mjs';
+import { CloudflareClient, normalizeApiToken, prepareConfig, resolveDatabase, resolveWorkersSubdomain } from '../scripts/deploy-cloudflare.mjs';
 import { productionOrigin, smokeProduction } from '../scripts/cloudflare-smoke.mjs';
 
 const accountId = 'a'.repeat(32);
@@ -38,6 +38,71 @@ test('existing D1 is reused without creating or overwriting a database', async (
   const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (url, opts) => { calls.push(opts.method); assert(url.startsWith(`https://api.cloudflare.com/client/v4/accounts/${accountId}/`)); return reply([{ uuid: id, name }]); } });
   assert.deepEqual(await resolveDatabase(client, { name }), { id, name, created: false });
   assert.deepEqual(calls, ['GET']);
+});
+
+const missingSubdomain = () => Response.json({ success: false, errors: [{ code: 10007 }] }, { status: 404 });
+
+test('existing Workers subdomain is retained with no account-level write', async () => {
+  const calls = [];
+  const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (_url, options) => {
+    calls.push(options.method); return reply({ subdomain: 'existing-account' });
+  } });
+  assert.deepEqual(await resolveWorkersSubdomain(client), { subdomain: 'existing-account', created: false });
+  assert.deepEqual(calls, ['GET']);
+});
+
+test('missing Workers subdomain is registered once and read back using a stable name', async () => {
+  const calls = [];
+  let registered;
+  const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (url, options) => {
+    calls.push([options.method, new URL(url).pathname]);
+    if (url.endsWith('/workers/scripts')) return reply([]);
+    if (options.method === 'PUT') {
+      registered = JSON.parse(options.body).subdomain;
+      assert.match(registered, /^aicheatcode-[a-f0-9]{12}$/);
+      assert(!registered.includes(accountId));
+      return reply({ subdomain: registered });
+    }
+    return registered ? reply({ subdomain: registered }) : missingSubdomain();
+  } });
+  assert.deepEqual(await resolveWorkersSubdomain(client), { subdomain: registered, created: true });
+  assert.deepEqual(calls.map(call => call[0]), ['GET', 'GET', 'GET', 'PUT', 'GET']);
+});
+
+test('subdomain bootstrap refuses authentication errors, unrelated 404s, and unverified accounts', async () => {
+  for (const failure of [() => reply(null, 403), () => reply(null, 404)]) {
+    let calls = 0;
+    const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async () => { calls++; return failure(); } });
+    await assert.rejects(resolveWorkersSubdomain(client));
+    assert.equal(calls, 1);
+  }
+  const methods = [];
+  const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (url, options) => {
+    methods.push(options.method); return url.endsWith('/workers/scripts') ? reply(null, 403) : missingSubdomain();
+  } });
+  await assert.rejects(resolveWorkersSubdomain(client));
+  assert.deepEqual(methods, ['GET', 'GET']);
+});
+
+test('subdomain registered during recheck is reused without renaming', async () => {
+  let reads = 0;
+  const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (url, options) => {
+    assert.equal(options.method, 'GET');
+    if (url.endsWith('/workers/scripts')) return reply([]);
+    return ++reads === 1 ? missingSubdomain() : reply({ subdomain: 'registered-elsewhere' });
+  } });
+  assert.deepEqual(await resolveWorkersSubdomain(client), { subdomain: 'registered-elsewhere', created: false });
+});
+
+test('uncertain subdomain registration is read back without repeating the write', async () => {
+  let registered, writes = 0;
+  const client = new CloudflareClient({ accountId, token: 'test-only-token', fetchImpl: async (url, options) => {
+    if (url.endsWith('/workers/scripts')) return reply([]);
+    if (options.method === 'PUT') { writes++; registered = JSON.parse(options.body).subdomain; throw new TypeError('interrupted after create'); }
+    return registered ? reply({ subdomain: registered }) : missingSubdomain();
+  } });
+  assert.deepEqual(await resolveWorkersSubdomain(client), { subdomain: registered, created: false });
+  assert.equal(writes, 1);
 });
 
 test('new database creation occurs once and resolves the actual UUID', async () => {

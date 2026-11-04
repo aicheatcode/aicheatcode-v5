@@ -3,6 +3,7 @@ import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } fr
 import { dirname, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { productionOrigin, smokeProduction } from './cloudflare-smoke.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -52,7 +53,9 @@ export class CloudflareClient {
         if ((data.errors || []).some(e => e.code === 9106)) {
           throw new Error('Cloudflare rejected CLOUDFLARE_API_TOKEN (HTTP ' + response.status + ', code 9106: authentication failed). Replace that GitHub Secret with a valid full API token from Cloudflare.');
         }
-        throw new Error(`Cloudflare API rejected ${method} ${path.split('?')[0]} (HTTP ${response.status}, codes ${codes || 'unknown'})`);
+        throw Object.assign(new Error(`Cloudflare API rejected ${method} ${path.split('?')[0]} (HTTP ${response.status}, codes ${codes || 'unknown'})`), {
+          httpStatus: response.status, codes: (data.errors || []).map(error => error.code).filter(Number.isInteger),
+        });
       }
       return data.result;
     }
@@ -64,6 +67,35 @@ export class CloudflareClient {
     assert(Array.isArray(results) && results.every(r => r.success !== false), 'D1 query failed');
     return results[0]?.results ?? [];
   }
+}
+
+export async function resolveWorkersSubdomain(client) {
+  const missing = error => error.httpStatus === 404 && error.codes?.includes(10007);
+  const verified = (value, created) => {
+    assert(value?.subdomain && NAME.test(value.subdomain), 'Cloudflare did not return a valid workers.dev subdomain');
+    return { subdomain: value.subdomain, created };
+  };
+  try { return verified(await client.request('/workers/subdomain'), false); }
+  catch (error) { if (!missing(error)) throw error; }
+  // Confirm account access and recheck absence before an account-level create.
+  const workers = await client.request('/workers/scripts');
+  assert(Array.isArray(workers), 'Could not verify Workers account access before subdomain registration');
+  try { return verified(await client.request('/workers/subdomain'), false); }
+  catch (error) { if (!missing(error)) throw error; }
+  const suffix = createHash('sha256').update(client.accountId).digest('hex').slice(0, 12);
+  const subdomain = `aicheatcode-${suffix}`;
+  let created;
+  try {
+    created = verified(await client.request('/workers/subdomain', { method: 'PUT', body: { subdomain } }), true);
+  } catch (error) {
+    // An interrupted registration may have succeeded; never repeat the write.
+    try { return verified(await client.request('/workers/subdomain'), false); }
+    catch { throw error; }
+  }
+  assert.equal(created.subdomain, subdomain, 'Cloudflare registered an unexpected subdomain');
+  const confirmed = verified(await client.request('/workers/subdomain'), true);
+  assert.equal(confirmed.subdomain, subdomain, 'Workers subdomain readback differs from registration');
+  return confirmed;
 }
 
 export async function resolveDatabase(client, { name, id }) {
@@ -140,8 +172,10 @@ export async function deployProduction() {
     assert(NAME.test(workerName) && NAME.test(databaseName), 'Invalid configured Worker or D1 database name');
     assert(/^[a-f0-9]{40}$/i.test(env.GITHUB_SHA || ''), 'GITHUB_SHA must identify the verified build before provisioning');
     assert(existsSync(resolve(ROOT, 'dist/server/wrangler.json')), 'The verified Worker build artifact is missing');
-    const account = await client.request('/workers/subdomain');
-    assert(account?.subdomain && NAME.test(account.subdomain), 'Configure the Cloudflare account workers.dev subdomain first');
+    const account = await resolveWorkersSubdomain(client);
+    report.subdomain = account;
+    report.checks.push({ check: 'Workers subdomain verified', status: 'PASS', created: account.created });
+    save();
     const autoUrl = `https://${workerName}.${account.subdomain}.workers.dev`;
     const url = productionOrigin(env.PRODUCTION_URL || autoUrl);
     const database = await resolveDatabase(client, { name: databaseName, id: env.CLOUDFLARE_D1_DATABASE_ID || undefined });
