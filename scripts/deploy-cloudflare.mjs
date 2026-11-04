@@ -139,8 +139,14 @@ export function prepareConfig({ root = ROOT, accountId, database, workerName, co
     ...base, name: workerName, topLevelName: workerName, account_id: accountId,
     workers_dev: policy.workers_dev, preview_urls: policy.preview_urls,
     observability: policy.observability, vars: { ...base.vars, DEPLOY_COMMIT: commit },
+
     d1_databases: [{ binding: 'DB', database_name: database.name, database_id: database.id, migrations_dir: relative(dirname(output), resolve(root, 'database/migrations')).replaceAll('\\', '/') }],
   };
+  // Access settings are server-only Worker variables, not browser JavaScript.
+  const access = ['CF_ACCESS_TEAM_DOMAIN','CF_ACCESS_AUD','CMS_OWNER_EMAIL'];
+  const present = access.filter(key => typeof process.env[key] === 'string' && process.env[key].trim());
+  if (present.length && present.length !== access.length) throw Error('Set all three CMS Access variables, not a partial configuration');
+  for (const key of present) config.vars[key] = process.env[key].trim();
   writeFileSync(output, JSON.stringify(config, null, 2) + '\n');
   return output;
 }

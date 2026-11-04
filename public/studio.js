@@ -58,6 +58,14 @@ function drawBlocks(){
   if(['hero','image'].includes(b.type)){
    field(grid,'URL gambar HTTPS atau aset /evidence/',b.image,v=>b.image=v,{wide:true});
    field(grid,'Keterangan gambar (alt)',b.alt,v=>b.alt=v,{wide:true});
+   const imageLabel=node('label','wide','Muat naik gambar (PNG, JPG, WebP atau AVIF, maksimum 750 KB)');
+   const picker=document.createElement('input');picker.type='file';picker.accept='image/png,image/jpeg,image/webp,image/avif';
+   picker.onchange=async()=>{const file=picker.files?.[0];if(!file)return;
+    if(file.size>750000){state('Gambar melebihi 750 KB. Kecilkan dahulu.',true);return;}
+    state('Memuat naik gambar ke storan D1…');picker.disabled=true;
+    try{const body=new FormData();body.set('image',file);const response=await fetch('/api/cms-media',{method:'POST',body});const result=await response.json();if(!response.ok)throw Error(result.error||'Gagal memuat naik.');b.image=result.url;dirty=true;drawBlocks();preview();state('Gambar disimpan. Klik Simpan draf atau Terbitkan untuk gunakan gambar.');}
+    catch(err){state(err.message||'Muat naik gagal.',true);picker.disabled=false;}
+   };imageLabel.append(picker);grid.append(imageLabel);
   }
   if(b.type==='image')field(grid,'Kapsyen',b.text,v=>b.text=v,{wide:true,multi:true});
   wrap.append(grid);

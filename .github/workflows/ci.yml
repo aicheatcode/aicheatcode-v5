@@ -126,6 +126,9 @@ jobs:
           CLOUDFLARE_D1_DATABASE_NAME: ${{ vars.CLOUDFLARE_D1_DATABASE_NAME }}
           CLOUDFLARE_WORKER_NAME: ${{ vars.CLOUDFLARE_WORKER_NAME }}
           PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
+          CF_ACCESS_TEAM_DOMAIN: ${{ vars.CF_ACCESS_TEAM_DOMAIN }}
+          CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
+          CMS_OWNER_EMAIL: ${{ vars.CMS_OWNER_EMAIL }}
         run: pnpm run deploy:cloudflare
       - name: Upload production verification evidence
         if: always()

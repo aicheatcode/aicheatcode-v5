@@ -41,3 +41,15 @@ test('CMS authentication verifies RS256 signature, issuer, audience and owner',a
  assert.equal(await cmsOwnerAuthorized(new Request('https://example.com',{headers:{'Cf-Access-Jwt-Assertion':tokenFor({...claims,email:'attacker@example.com'})}}),vars,fetchMock),false);
  assert.equal(await cmsOwnerAuthorized(new Request('https://example.com',{headers:{'Cf-Access-Jwt-Assertion':tokenFor({...claims,exp:now-1})}}),vars,fetchMock),false);
 });
+
+import {detectImageMime,MAX_MEDIA_BYTES} from '../lib/cms-media.mjs';
+test('CMS media validates binary signatures, not MIME text alone',()=>{
+ const png=Uint8Array.from([137,80,78,71,13,10,26,10,0]);
+ const jpg=Uint8Array.from([255,216,255,0]);
+ const webp=Uint8Array.from([82,73,70,70,0,0,0,0,87,69,66,80]);
+ assert.equal(detectImageMime(png),'image/png');
+ assert.equal(detectImageMime(jpg),'image/jpeg');
+ assert.equal(detectImageMime(webp),'image/webp');
+ assert.equal(detectImageMime(new TextEncoder().encode('<svg onload=alert(1)>')),null);
+ assert.equal(MAX_MEDIA_BYTES,750000);
+});

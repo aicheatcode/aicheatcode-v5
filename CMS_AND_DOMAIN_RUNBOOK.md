@@ -9,6 +9,7 @@ Status: STAGED ONLY. DO NOT claim completion or switch DNS until authentication,
 - Dynamic pages: published CMS pages take precedence; original V5 pages remain safe fallback.
 - /admin.html: legacy prompt editor uses the same Access verification.
 - /cms.css: white, Deep Ink, Insight Blue and Prompt Orange styling for published CMS pages.
+- /api/cms-media: authenticated image uploads (PNG/JPG/WebP/AVIF, max 750 KB), stored in D1, publicly read through /media/:id.
 
 ## Required before enabling editor
 1. In Cloudflare Zero Trust, create a self-hosted Access app covering /studio.html, /admin.html, /api/site-cms and /api/editor on each enabled site hostname. Restrict it to the owner. Do not rely on untrusted identity headers or display-only login controls.
@@ -26,6 +27,6 @@ Apply existing D1 migrations (including 0002_cms_pages.sql), verifying original 
 5. Archive old neon assets only after all acceptance criteria pass.
 
 ## Known limitations
-- Image management supports external HTTPS URLs and existing local assets; binary upload/R2 storage is not yet available.
+- Image management supports HTTPS URLs and image uploads up to 750 KB using D1 BLOB storage; R2 is recommended for larger media libraries.
 - Live owner sign-in and zone/DNS cutover are not implemented by this code-only branch.
 - Production release remains blocked pending Cloudflare Access configuration, end-to-end browser QA and custom domain activation.
