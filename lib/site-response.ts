@@ -30,7 +30,7 @@ export async function servePage(request:Request,db?:any){
   return new Response(xml,{headers:{'Content-Type':'application/xml; charset=utf-8','Cache-Control':'public, max-age=3600','X-Content-Type-Options':'nosniff'}});
  }
  let cmsDoc=null;
- if(db&&CMS_PATH.test(path)&&!u.searchParams.has('legacy')){
+ if(db&&CMS_PATH.test(path)&&!u.searchParams.has('legacy')&&u.searchParams.get('lang')!=='en'){
   try{const row=await db.prepare('SELECT published_json FROM cms_pages WHERE path=?').bind(path).first();
    if(row?.published_json)cmsDoc=validatePage(JSON.parse(row.published_json));
   }catch(e){console.error('CMS page unavailable; retaining baseline page',e);}

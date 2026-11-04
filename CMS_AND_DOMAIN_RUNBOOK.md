@@ -30,3 +30,5 @@ Apply existing D1 migrations (including 0002_cms_pages.sql and 0003_cms_media.sq
 - Image management supports HTTPS URLs and image uploads up to 750 KB using D1 BLOB storage; R2 is recommended for larger media libraries.
 - Live owner sign-in and zone/DNS cutover are not implemented by this code-only branch.
 - Production release remains blocked pending Cloudflare Access configuration, end-to-end browser QA and custom domain activation.
+
+- CMS entries currently author BM content; English '?lang=en' views continue to display the original EN site until translated versions are implemented.

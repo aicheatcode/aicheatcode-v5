@@ -53,3 +53,10 @@ test('CMS media validates binary signatures, not MIME text alone',()=>{
  assert.equal(detectImageMime(new TextEncoder().encode('<svg onload=alert(1)>')),null);
  assert.equal(MAX_MEDIA_BYTES,750000);
 });
+
+test('CMS publishes a route-specific canonical instead of the fallback homepage canonical',()=>{
+ const base='<html lang="ms"><head><title>Home</title><meta name="description" content="Before"><link rel="canonical" href="https://cannybrainy.com/"><meta property="og:url" content="https://cannybrainy.com/"></head><body><main id="content" tabindex="-1">Old</main></body></html>';
+ const result=applyCmsToHub(base,{...page,path:'/belajar/panduan-baru'});
+ assert(result.includes('<link rel="canonical" href="https://cannybrainy.com/belajar/panduan-baru">'));
+ assert(result.includes('<meta property="og:url" content="https://cannybrainy.com/belajar/panduan-baru">'));
+});
