@@ -33,7 +33,7 @@ try {
   const encoded=JSON.stringify(fixture).replaceAll("'","''");
   command(['d1','execute','DB','--local','--config',config,'--persist-to',join(temporary,'state'),'--command',"INSERT OR REPLACE INTO cms_pages(path,draft_json,published_json,revision,updated_by) VALUES ('/tentang','"+encoded+"','"+encoded+"',1,'local-test')"]);
   const imageId='a'.repeat(64);
-  command(['d1','execute','DB','--local','--config',config,'--persist-to',join(temporary,'state'),'--command',"INSERT OR REPLACE INTO cms_media(id,mime,bytes,byte_size) VALUES ('"+imageId+"','image/png',x'89504e470d0a1a0a',9)"]);
+  command(['d1','execute','DB','--local','--config',config,'--persist-to',join(temporary,'state'),'--command',"INSERT OR REPLACE INTO cms_media(id,mime,bytes,byte_size) VALUES ('"+imageId+"','image/png',x'89504e470d0a1a0a',8)"]);
   const listener = createServer();
   await new Promise(resolve => listener.listen(0, '127.0.0.1', resolve));
   const port = listener.address().port;
@@ -51,7 +51,7 @@ try {
   const media=await fetch(origin+'/media/'+imageId);
   assert.equal(media.status,200,'D1 image route is not available');
   assert.equal(media.headers.get('content-type'),'image/png');
-  assert.equal((await media.arrayBuffer()).byteLength,9);
+  assert.equal((await media.arrayBuffer()).byteLength,8);
   const studio=await fetch(origin+'/studio.html');assert.equal(studio.status,200);
   assert((await studio.text()).includes('STUDIO PEMILIK'));
   console.log(JSON.stringify({ scope: 'LOCAL WORKER + D1', ...result }, null, 2));
