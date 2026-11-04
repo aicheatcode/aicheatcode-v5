@@ -37,6 +37,8 @@ jobs:
         run: node scripts/test-repaired-flows.mjs
       - name: Cloudflare deployment safeguards
         run: pnpm run test:cloudflare
+      - name: CMS structured content and Access JWT tests
+        run: node --test tests/cms.test.mjs
       - name: Server tests
         run: node scripts/test-server.mjs
       - name: Production build

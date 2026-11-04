@@ -1,4 +1,5 @@
 import {home} from './home';
+import {CMS_PATH,applyCmsToHub,validatePage} from './cms-core.mjs';
 import {renderHub,publicPaths,registry,esc} from './hub.mjs';
 import base from '../public/data.json';
 import curated from '../public/curated-prompts.json';
@@ -18,16 +19,29 @@ const titles:Record<string,[string,string]>={
  '/galeri':['Galeri eksperimen','Eksperimen visual asal AICHEATCODE dikekalkan.']};
 export async function servePage(request:Request,db?:any){
  const u=new URL(request.url),path=u.pathname.replace(/\/$/,'')||'/';
- if(path==='/robots.txt')return new Response('User-agent: *\nDisallow: /api/\nDisallow: /admin.html\nDisallow: /koleksi\nDisallow: /bina\nDisallow: /tools/\nSitemap: https://cannybrainy.com/sitemap.xml\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}});
+ if(path==='/robots.txt')return new Response('User-agent: *\nDisallow: /api/\nDisallow: /admin.html\nDisallow: /studio.html\nDisallow: /koleksi\nDisallow: /bina\nDisallow: /tools/\nSitemap: https://cannybrainy.com/sitemap.xml\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}});
  if(path==='/sitemap.xml'){
   // Only canonical, indexable public pages; omit query variants and private tools.
-  const pages=[...new Set([...publicPaths,'/prompt','/panduan','/sumber-status'])];
+  let published=[];if(db){try{const rows=await db.prepare('SELECT path FROM cms_pages WHERE published_json IS NOT NULL').all();published=(rows.results||[]).map((x:any)=>x.path).filter((p:string)=>CMS_PATH.test(p));}catch(e){console.warn('CMS sitemap not ready',e);}}\n  const pages=[...new Set([...publicPaths,...published,'/prompt','/panduan','/sumber-status'])];
   const xml='<?xml version="1.0" encoding="UTF-8"?>'+
    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+
    pages.map(p=>'<url><loc>'+esc(canonicalOrigin+p)+'</loc></url>').join('')+'</urlset>';
   return new Response(xml,{headers:{'Content-Type':'application/xml; charset=utf-8','Cache-Control':'public, max-age=3600','X-Content-Type-Options':'nosniff'}});
  }
- const hub=renderHub(u);if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash)))return new Response(hub.html,{headers:pageHeaders});
+ let cmsDoc=null;
+ if(db&&CMS_PATH.test(path)&&!u.searchParams.has('legacy')){
+  try{const row=await db.prepare('SELECT published_json FROM cms_pages WHERE path=?').bind(path).first();
+   if(row?.published_json)cmsDoc=validatePage(JSON.parse(row.published_json));
+  }catch(e){console.error('CMS page unavailable; retaining baseline page',e);}
+ }
+ const hub=renderHub(u);
+ if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash))){
+  return new Response(cmsDoc?applyCmsToHub(hub.html,cmsDoc):hub.html,{headers:pageHeaders});
+ }
+ if(!hub&&cmsDoc){
+  const fallback=renderHub(new URL('/',u));
+  if(fallback)return new Response(applyCmsToHub(fallback.html,cmsDoc),{headers:pageHeaders});
+ }
  let m=titles[path],detail='',canonicalPath=path;
  if(path.startsWith('/prompt/')){
   const id=path.slice(8);if(id.startsWith('LOCAL-'))m=['Versi peribadi','Versi ini hanya tersedia pada pelayar yang menyimpannya.'];
