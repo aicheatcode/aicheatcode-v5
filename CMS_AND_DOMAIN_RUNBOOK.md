@@ -17,7 +17,7 @@ Status: STAGED ONLY. DO NOT claim completion or switch DNS until authentication,
 3. Verify owner login, draft saving, publishing, unpublishing, simultaneous edit conflicts, unauthorized requests, and browser/mobile preview.
 
 ## Migration
-Apply existing D1 migrations (including 0002_cms_pages.sql), verifying original 1,071 prompt IDs and editor rows remain intact. Preserve a D1 time-travel bookmark/backup before write operations.
+Apply existing D1 migrations (including 0002_cms_pages.sql and 0003_cms_media.sql). The deployment seed populates existing tutorials and projects as unpublished D1 drafts using INSERT OR IGNORE; it preserves prior edits and never changes the published site without explicit action. Verify original 1,071 prompt IDs and editor rows remain intact. Preserve a D1 time-travel bookmark/backup before write operations.
 
 ## Domain cutover
 1. Verify cannybrainy.com exists as an ACTIVE Cloudflare DNS zone. Back up all records including MX, TXT, SPF, DKIM, DMARC and GitHub verification.

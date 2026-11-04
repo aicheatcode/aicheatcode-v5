@@ -195,6 +195,13 @@ export async function deployProduction() {
     }
     runWrangler(['d1', 'migrations', 'apply', 'DB', '--remote', '--config', config]);
     report.checks.push({ check: 'D1 migrations', status: 'PASS' });
+    // Import existing lessons/projects only as drafts. Never overwrite edits or publish automatically.
+    const cmsDrafts=spawnSync(process.execPath,[resolve(ROOT,'scripts/prepare-cms-seed.mjs'),'--output',output],{encoding:'utf8'});
+    assert.equal(cmsDrafts.status,0,'CMS draft seed generation failed: '+(cmsDrafts.stderr||''));
+    runWrangler(['d1','execute','DB','--remote','--config',config,'--file',resolve(output,'cms-drafts-seed.sql')]);
+    const cmsManifest=JSON.parse(readFileSync(resolve(output,'cms-drafts-manifest.json'),'utf8'));
+    report.checks.push({check:'CMS source pages migrated to unpublished drafts',status:'PASS',sourcePages:cmsManifest.count});
+    save();
     const prepared = spawnSync('python3', [resolve(ROOT, 'scripts/prepare-d1-seed.py'), '--output', output], { encoding: 'utf8' });
     assert.equal(prepared.status, 0, 'Source seed verification failed');
     const manifest = JSON.parse(readFileSync(resolve(output, 'seed-manifest.json'), 'utf8'));
