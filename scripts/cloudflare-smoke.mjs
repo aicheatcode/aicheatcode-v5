@@ -8,11 +8,27 @@ export function productionOrigin(value, { allowLocal = false } = {}) {
   return url.origin;
 }
 
-export async function smokeProduction({ url, commit, minimumCount = 1071, firstPromptId, fetchImpl = fetch, allowLocal = false, attempts = 12, delayMs = 2000 }) {
+export async function smokeProduction({ url, commit, minimumCount = 1071, firstPromptId, fetchImpl = fetch, allowLocal = false, attempts = 12, delayMs = 2000, requestDelayMs = 250 }) {
   const origin = productionOrigin(url, { allowLocal });
   const checks = [];
   async function request(path, options = {}) {
-    return fetchImpl(origin + path, { ...options, redirect: 'error', signal: AbortSignal.timeout(15000), headers: { 'Cache-Control': 'no-cache', ...options.headers } });
+    const method = options.method || 'GET';
+    for (let attempt = 0; ; attempt++) {
+      let response;
+      try {
+        response = await fetchImpl(origin + path, { ...options, redirect: 'error', signal: AbortSignal.timeout(15000), headers: { 'Cache-Control': 'no-cache', ...options.headers } });
+        // Drain every response, including editor denials, before reusing connections.
+        const body = await response.text();
+        return { status: response.status, text: async () => body, json: async () => JSON.parse(body) };
+      } catch (error) {
+        await response?.body?.cancel().catch(() => {});
+        const transportFailure = ['TypeError', 'TimeoutError', 'AbortError'].includes(error.name);
+        if (method !== 'GET' || !transportFailure || attempt >= 2) {
+          throw new Error(`${method} ${path} failed: ${error.message}`, { cause: error });
+        }
+        await new Promise(resolve => setTimeout(resolve, requestDelayMs));
+      }
+    }
   }
   let health;
   for (let attempt = 0; attempt < attempts; attempt++) {

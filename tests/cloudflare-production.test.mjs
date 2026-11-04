@@ -111,6 +111,48 @@ test('HTTP smoke verifies commit, D1/API agreement, and anonymous editor denial'
   assert.equal(result.status, 'PASS'); assert.equal(result.checks.length, 6);
 });
 
+test('smoke drains denied responses before issuing the next HTTP request', async () => {
+  const fixture = workerFixture();
+  let previous;
+  const fetchImpl = async (...args) => {
+    if (previous) assert(previous.bodyUsed, 'Previous response body was left unread');
+    previous = await fixture(...args);
+    return previous;
+  };
+  const result = await smokeProduction({ url: 'https://example.invalid', commit, fetchImpl, attempts: 1 });
+  assert.equal(result.status, 'PASS');
+  assert(previous.bodyUsed);
+});
+
+test('smoke retries bounded GET transport failures without retrying writes or HTTP failures', async () => {
+  const fixture = workerFixture();
+  let robotsCalls = 0;
+  const options = { url: 'https://example.invalid', commit, attempts: 1, requestDelayMs: 0 };
+  await smokeProduction({ ...options, fetchImpl: async (url, init) => {
+    if (url.endsWith('/robots.txt') && ++robotsCalls < 3) throw new DOMException('test timeout', 'TimeoutError');
+    return fixture(url, init);
+  } });
+  assert.equal(robotsCalls, 3);
+  let puts = 0;
+  await assert.rejects(smokeProduction({ ...options, fetchImpl: async (url, init) => {
+    if (init.method === 'PUT') { puts++; throw new TypeError('test transport interruption'); }
+    return fixture(url, init);
+  } }), /PUT \/api\/editor failed/);
+  assert.equal(puts, 1);
+  robotsCalls = 0;
+  await assert.rejects(smokeProduction({ ...options, fetchImpl: async (url, init) => {
+    if (url.endsWith('/robots.txt')) { robotsCalls++; throw new TypeError('test network failure'); }
+    return fixture(url, init);
+  } }), /GET \/robots.txt failed/);
+  assert.equal(robotsCalls, 3);
+  let homes = 0;
+  await assert.rejects(smokeProduction({ ...options, fetchImpl: async (url, init) => {
+    if (new URL(url).pathname === '/') { homes++; return new Response('unavailable', { status: 503 }); }
+    return fixture(url, init);
+  } }));
+  assert.equal(homes, 1);
+});
+
 test('HTTP 200 from an old commit cannot become a production PASS', async () => {
   await assert.rejects(smokeProduction({ url: 'https://example.invalid', commit, fetchImpl: workerFixture({ stale: true }), attempts: 1 }), /different commit/);
 });
