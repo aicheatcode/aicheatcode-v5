@@ -22,7 +22,8 @@ export async function servePage(request:Request,db?:any){
  if(path==='/robots.txt')return new Response('User-agent: *\nDisallow: /api/\nDisallow: /admin.html\nDisallow: /studio.html\nDisallow: /koleksi\nDisallow: /bina\nDisallow: /tools/\nSitemap: https://cannybrainy.com/sitemap.xml\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}});
  if(path==='/sitemap.xml'){
   // Only canonical, indexable public pages; omit query variants and private tools.
-  let published=[];if(db){try{const rows=await db.prepare('SELECT path FROM cms_pages WHERE published_json IS NOT NULL').all();published=(rows.results||[]).map((x:any)=>x.path).filter((p:string)=>CMS_PATH.test(p));}catch(e){console.warn('CMS sitemap not ready',e);}}\n  const pages=[...new Set([...publicPaths,...published,'/prompt','/panduan','/sumber-status'])];
+  let published=[];if(db){try{const rows=await db.prepare('SELECT path FROM cms_pages WHERE published_json IS NOT NULL').all();published=(rows.results||[]).map((x:any)=>x.path).filter((p:string)=>CMS_PATH.test(p));}catch(e){console.warn('CMS sitemap not ready',e);}}
+  const pages=[...new Set([...publicPaths,...published,'/prompt','/panduan','/sumber-status'])];
   const xml='<?xml version="1.0" encoding="UTF-8"?>'+
    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+
    pages.map(p=>'<url><loc>'+esc(canonicalOrigin+p)+'</loc></url>').join('')+'</urlset>';
