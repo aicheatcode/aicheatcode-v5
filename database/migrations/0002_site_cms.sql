@@ -1,12 +1,10 @@
--- Additive CMS migration. Existing catalog and editor data are retained.
+-- CMS entries are additive. Preserve existing prompt_records and editor_state.
+-- A separate published snapshot prevents unfinished drafts leaking onto public pages.
 CREATE TABLE IF NOT EXISTS site_content (
   slug TEXT PRIMARY KEY,
-  title TEXT NOT NULL,
-  description TEXT NOT NULL DEFAULT '',
-  image_url TEXT,
-  sections_json TEXT NOT NULL DEFAULT '[]',
-  revision INTEGER NOT NULL DEFAULT 1,
-  published INTEGER NOT NULL DEFAULT 0 CHECK (published IN (0,1)),
+  draft_json TEXT NOT NULL,
+  published_json TEXT,
+  revision INTEGER NOT NULL DEFAULT 1 CHECK(revision >= 1),
   updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE TABLE IF NOT EXISTS site_content_audit (
@@ -16,4 +14,4 @@ CREATE TABLE IF NOT EXISTS site_content_audit (
   changed_at TEXT NOT NULL DEFAULT (datetime('now')),
   action TEXT NOT NULL CHECK(action IN ('create','update','publish','unpublish'))
 );
-CREATE INDEX IF NOT EXISTS idx_site_content_published ON site_content(published);
+CREATE INDEX IF NOT EXISTS idx_site_content_updated ON site_content(updated_at);
