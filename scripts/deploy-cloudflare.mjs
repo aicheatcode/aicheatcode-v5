@@ -138,6 +138,14 @@ export function prepareConfig({ root = ROOT, accountId, database, workerName, co
   const config = {
     ...base, name: workerName, topLevelName: workerName, account_id: accountId,
     workers_dev: policy.workers_dev, preview_urls: policy.preview_urls,
+    // The Worker is the origin for this hostname: Cloudflare provisions DNS and TLS.
+    // No DNS record is removed by our script. Existing incompatible records cause a safe failure.
+    routes: (() => {
+      const routes=policy.routes||[];
+      assert(Array.isArray(routes)&&routes.length===1&&routes[0].pattern==='cannybrainy.com'&&routes[0].custom_domain===true,
+        'Production must use a single approved cannybrainy.com Custom Domain');
+      return routes;
+    })(),
     observability: policy.observability, vars: { ...base.vars, DEPLOY_COMMIT: commit },
 
     d1_databases: [{ binding: 'DB', database_name: database.name, database_id: database.id, migrations_dir: relative(dirname(output), resolve(root, 'database/migrations')).replaceAll('\\', '/') }],

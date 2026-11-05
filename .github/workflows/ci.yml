@@ -43,6 +43,8 @@ jobs:
         run: pnpm run test:cloudflare
       - name: CMS structured content and Access JWT tests
         run: node --test tests/cms.test.mjs
+      - name: Primary domain must fail CI if HTTP/SSL/routing blocked
+        run: node --test tests/domain-gate.test.mjs
       - name: Generate CMS content drafts from original lessons and projects
         run: node scripts/prepare-cms-seed.mjs --output .cloudflare/cms-qa
       - name: Generate editable page files
@@ -81,19 +83,28 @@ jobs:
     outputs:
       ready: ${{ steps.credentials.outputs.ready }}
     steps:
-      - name: Check required Cloudflare credentials
+      - name: Check required Cloudflare credentials and owner Access configuration
         id: credentials
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_ACCESS_TEAM_DOMAIN: ${{ vars.CF_ACCESS_TEAM_DOMAIN }}
+          CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
+          CMS_OWNER_EMAIL: ${{ vars.CMS_OWNER_EMAIL }}
         shell: bash
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+          missing=()
+          for name in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID CF_ACCESS_TEAM_DOMAIN CF_ACCESS_AUD CMS_OWNER_EMAIL; do
+            if [ -z "${!name}" ]; then missing+=("$name"); fi
+          done
+          if [ "${#missing[@]}" -gt 0 ]; then
             echo 'ready=false' >> "$GITHUB_OUTPUT"
-            echo '::notice::BLOCKED: add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to GitHub Secrets.'
+            echo '::error::BLOCKED: Cloudflare deployment or owner Access configuration is incomplete.'
             echo '## Cloudflare production: BLOCKED' >> "$GITHUB_STEP_SUMMARY"
-            echo 'Required Cloudflare secrets are missing. No database or Worker changes were attempted; production is not PASS.' >> "$GITHUB_STEP_SUMMARY"
-            exit 0
+            echo 'Required settings missing:' >> "$GITHUB_STEP_SUMMARY"
+            for name in "${missing[@]}"; do echo "- \`$name\`" >> "$GITHUB_STEP_SUMMARY"; done
+            echo 'No domain or database mutations were attempted by this job.' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
           fi
           echo 'ready=true' >> "$GITHUB_OUTPUT"
   deploy-production:

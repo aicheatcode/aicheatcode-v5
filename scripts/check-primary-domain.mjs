@@ -29,4 +29,8 @@ try{
 mkdirSync(resolve('.cloudflare/production'),{recursive:true});
 writeFileSync(output,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report));
+if(report.status!=='PASS'){
+ console.error('Primary domain verification failed. GitHub Actions must not report a successful go-live when cannybrainy.com is BLOCKED.');
+ process.exitCode=1;
+}
 if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,'\n## cannybrainy.com DNS/SSL and V5 verification: '+report.status+'\n\n'+report.checks.map(x=>'- '+x.name+': '+x.status+' — '+x.detail).join('\n')+'\n');
