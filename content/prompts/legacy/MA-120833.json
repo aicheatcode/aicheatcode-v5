@@ -1,0 +1,21 @@
+{
+  "id": "MA-120833",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "Packaging Launch Visual",
+  "text": "Bertindak sebagai pakar berpengalaman dalam mockup produk dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Botol serum tempatan yang mempunyai label sebenar, bayang realistik dan label tidak berubah bentuk. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Bina dua komposisi 4:5 untuk iklan feed dan banner website; sediakan shot list, susunan hierarki, alt text dan semakan label. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22001",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 30,
+  "problem": "Hasil untuk projek «Botol serum tempatan yang mempunyai label sebenar, bayang realistik dan label tidak berubah bentuk.» belum disediakan mengikut keperluan…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi visual, imej atau cadangan pembetulan (hasil sasaran, belum diuji)",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Packaging Launch Visual.",
+  "solution": "Tugasan: Packaging Launch Visual. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120798",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 25",
+  "text": "Build a QA checklist for an eight-second generated product video. Check first, middle and last frames, all contact events, object geometry, text, direction continuity and audio if present. Record timestamps for defects. Do not mark PASS without inspecting the actual video.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-25",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 654,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Build a QA checklist for an eight-second generated product video. Check first, middle and last…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 25.",
+  "solution": "Tugasan: Episod 25. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

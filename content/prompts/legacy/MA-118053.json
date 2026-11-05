@@ -1,0 +1,21 @@
+{
+  "id": "MA-118053",
+  "category": "Gaya Hidup, Hartanah & Acara",
+  "type": "Gaya Hidup & Aplikasi Praktikal",
+  "title": "Padanan kapsul wardrobe",
+  "text": "Anda ialah Strategis Kandungan, Editor Bahasa Melayu Malaysia dan Pemeriksa Fakta untuk kategori Fesyen & Gaya.\n\nTUGAS: Hasilkan kandungan carousel 6 slaid tentang ‘Padanan kapsul wardrobe’ untuk Instagram / LinkedIn. Objektif: DIDIK — berikan langkah yang boleh dilaksanakan. Sasaran awal: pembeli pakaian dalam talian.\n\nINPUT WAJIB (ganti kurungan dengan maklumat sebenar):\n- Jenama: [Nama jenama]\n- Produk/servis: [Produk atau perkhidmatan]\n- Audiens: [Sasaran audiens]\n- Cabaran: [Masalah audiens]\n- Fakta/bukti sah: [Bukti atau fakta disahkan]\n- Tindakan/URL: [CTA atau pautan rasmi]\n- Nada: [Nada jenama]\n\nPENGETAHUAN EDITORIAL KHUSUS:\n- Tindakan berguna yang perlu ditunjukkan: bina tiga gaya daripada item asas sedia ada.\n- Risiko/mitos yang mesti dibetulkan: memaksa pembelian tambahan untuk setiap padanan.\n- Konteks penawaran contoh: panduan pemilihan dan gaya pakaian.\n\nKEHENDAK OUTPUT:\nTulis tepat enam slaid bernombor S1–S6. Setiap slaid ada tajuk maksimum 8 perkataan dan teks isi maksimum 24 perkataan. S1 hook, S2 masalah, S3 tindakan, S4 kesilapan, S5 contoh aplikasi, S6 satu CTA. Sertakan cadangan visual ringkas bagi setiap slaid.\nBahasa: Bahasa Melayu Malaysia yang asli, bukan terjemahan kaku atau bahasa Indonesia. Fokus satu idea utama, contoh dekat dengan pengguna Malaysia, dan mesej spesifik yang boleh dilaksanakan. Tautkan kandungan kepada input sebenar; jangan meneka nama, harga, statistik, testimoni, lesen, polisi, kajian atau ciri produk. Jika maklumat kritikal tiada, tulis [PERLU DISAHKAN] pada tempatnya dan elakkan sebarang dakwaan. Nota keselamatan tambahan: ukuran dan fabrik ikut stok produk sebenar.\n\nKRITERIA LULUS: topik jelas; kandungan mengikut objektif didik; struktur carousel 6 slaid tepat; fakta boleh disemak; CTA satu tindakan; tulisan mudah dibaca.\nPAPARKAN OUTPUT AKHIR SAHAJA, diikuti satu baris 'Semakan editor:' dengan isu yang masih perlu disahkan (jika ada).",
+  "source": "PAKEJ_5000_PROMPT_KANDUNGAN_BM.zip",
+  "location": "5000_prompt_bm.csv:baris 3022",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 200,
+  "problem": "Bahan  carousel 6 slaid tentang “Padanan kapsul wardrobe” belum disusun untuk audiens sasaran.",
+  "use": "Menyusun perancangan kehidupan atau acara",
+  "inputs": "[Nama jenama]; [Produk atau perkhidmatan]; [Sasaran audiens]; [Masalah audiens]",
+  "output": "Draf Carousel 6 slaid tentang Padanan kapsul wardrobe; perlu semakan fakta sebelum terbit.",
+  "hook": "Ada tugasan praktikal tetapi keputusan atau perancangan belum tersusun? Fokus: Padanan kapsul wardrobe.",
+  "solution": "Tugasan: Padanan kapsul wardrobe. Masukkan keadaan, keutamaan, bajet dan kekangan sebenar; semak cadangan terhadap sumber yang relevan.",
+  "cta": "Sesuaikan dengan keadaan sebenar dan sahkan butiran penting sebelum bertindak.",
+  "recordType": "Templat kandungan",
+  "qa": "BELUM DIUJI – INFERENS"
+}

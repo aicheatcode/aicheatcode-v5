@@ -1,0 +1,21 @@
+{
+  "id": "MA-120100",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create three variations of short, positive reinforcement comments for this student's work",
+  "text": "Create three variations of short, positive reinforcement comments for this student's work. Focus on effort, improvement, and specific strengths. Keep the tone warm and encouraging.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A97",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 386,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create three variations of short, positive reinforcement comments for this student's work” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 97. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

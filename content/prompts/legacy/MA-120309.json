@@ -1,0 +1,21 @@
+{
+  "id": "MA-120309",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Prompt tanpa tajuk",
+  "text": "Summarize the current guideline-based recommendations for anticoagulation, rate versus rhythm control, and stroke prevention as they apply to this patient.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B65",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 248,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Summarize the current guideline-based recommendations for anticoagulation, rate versus rhythm…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap?",
+  "solution": "Tugasan: Prompt tanpa tajuk. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

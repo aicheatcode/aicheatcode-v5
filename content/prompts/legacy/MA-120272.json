@@ -1,0 +1,21 @@
+{
+  "id": "MA-120272",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Synthesize insights from usage data",
+  "text": "Based on the following product usage data, summarize 3 key behavioral trends and what they suggest about user needs. Recommend 2 follow-up investigations. [Insert data or summary]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B49",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 922,
+  "problem": "Keperluan teknikal untuk “Synthesize insights from usage data” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Insert data or summary]",
+  "output": "Jadual, formula atau aliran data yang boleh diuji dengan contoh sebenar.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Synthesize insights from usage data.",
+  "solution": "Tugasan: Synthesize insights from usage data. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

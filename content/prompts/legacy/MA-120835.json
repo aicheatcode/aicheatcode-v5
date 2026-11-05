@@ -1,0 +1,21 @@
+{
+  "id": "MA-120835",
+  "category": "AI Imej & Fotografi",
+  "type": "Fotografi AI & Kamera",
+  "title": "Food Photography Board",
+  "text": "Bertindak sebagai pakar berpengalaman dalam fotografi f&b dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Hidangan nasi kerabu pada pinggan seramik putih untuk kempen kedai makan di Malaysia. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Tetapkan latar meja kayu, sudut 45°, pantulan natural, gaya editorial yang menyelerakan dan ruang cta; sertakan 3 variasi shot. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22003",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 8,
+  "problem": "Hasil untuk projek «Hidangan nasi kerabu pada pinggan seramik putih untuk kempen kedai makan di Malaysia.» belum disediakan mengikut keperluan teknikal, visual…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi visual, imej atau cadangan pembetulan (hasil sasaran, belum diuji)",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Food Photography Board.",
+  "solution": "Tugasan: Food Photography Board. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

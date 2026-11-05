@@ -1,0 +1,21 @@
+{
+  "id": "MA-120302",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Working through the differential",
+  "text": "I am a clinician conducting a routine clinical assessment of a 28-year-old woman presenting with unilateral knee discomfort, intermittent calf tightness, and chest wall soreness after recent prolonged travel and increased physical activity.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B13",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 253,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a clinician conducting a routine clinical assessment of a 28-year-old woman presenting with…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Working through the differential.",
+  "solution": "Tugasan: Working through the differential. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120807",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 34",
+  "text": "Bina panduan nada untuk jenama pendidikan AI. Situasi: fail gagal dimuat turun, soalan asas, dan aduan produk. Untuk setiap situasi, tulis satu respons sesuai dan satu respons yang perlu dielakkan beserta sebab. Jangan menjanjikan refund atau tempoh penyelesaian tanpa polisi.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-34",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 676,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Bina panduan nada untuk jenama pendidikan AI. Situasi: fail gagal dimuat turun, soalan asas, dan…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 34.",
+  "solution": "Tugasan: Episod 34. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

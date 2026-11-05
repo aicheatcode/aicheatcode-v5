@@ -1,0 +1,21 @@
+{
+  "id": "MA-120086",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create an outline for a ten-slide presentation introducing photosynthesis to [grade level] students",
+  "text": "Create an outline for a ten-slide presentation introducing photosynthesis to [grade level] students. Include slide titles, bullet points, simple examples, and interactive elements.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A23",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 383,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create an outline for a ten-slide presentation introducing photosynthesis to [grade level]…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 23. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

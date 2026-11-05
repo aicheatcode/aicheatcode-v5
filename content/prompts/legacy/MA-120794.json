@@ -1,0 +1,21 @@
+{
+  "id": "MA-120794",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 21",
+  "text": "Eight-second continuous shot. One adult presenter places a blue card on a white desk, then looks at the camera. Locked camera, medium framing, soft studio light, plain background. One clear action, natural hand movement. No scene change and no on-screen text.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-21",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 642,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Eight-second continuous shot. One adult presenter places a blue card on a white desk, then looks at…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 21.",
+  "solution": "Tugasan: Episod 21. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

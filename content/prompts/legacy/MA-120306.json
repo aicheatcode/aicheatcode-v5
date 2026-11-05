@@ -1,0 +1,21 @@
+{
+  "id": "MA-120306",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Counseling the patient and setting next steps",
+  "text": "I am an endocrinologist counseling a 60-year-old woman newly diagnosed with type 2 diabetes. Write patient-friendly after-visit instructions covering medications, diet, glucose monitoring, and when to seek care.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B42",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 244,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am an endocrinologist counseling a 60-year-old woman newly diagnosed with type 2 diabetes. Write…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Counseling the patient and setting next steps.",
+  "solution": "Tugasan: Counseling the patient and setting next steps. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan. Hasil bukan pengganti penilaian klinikal atau nasihat kesihatan profesional.",
+  "cta": "Gunakan sebagai draf pembelajaran; untuk keputusan klinikal, sahkan dengan profesional kesihatan bertauliah.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -36,6 +36,12 @@ export async function servePage(request:Request,db?:any){
    if(row?.published_json)cmsDoc=validatePage(JSON.parse(row.published_json));
   }catch(e){console.error('CMS page unavailable; retaining baseline page',e);}
  }
+ // Original neon-pink animated homepage remains the default.
+ // Editorial version stays available with ?editorial=1; no public permissions are changed.
+ if(path==='/'&&!u.searchParams.has('editorial')){
+  const neonPage=home.replace('</head>','<meta name="robots" content="index,follow"><link rel="canonical" href="'+canonicalOrigin+'/"></head>');
+  return new Response(neonPage,{headers:pageHeaders});
+ }
  const editablePage=cmsDoc||(!u.searchParams.has('legacy')&&u.searchParams.get('lang')!=='en'?folderPages[path]:null);
  const hub=renderHub(u);
  if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash))){

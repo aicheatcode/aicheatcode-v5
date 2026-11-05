@@ -1,0 +1,21 @@
+{
+  "id": "MA-120096",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Suggest five project-based assessment ideas for [topic] suitable for [grade level] students",
+  "text": "Suggest five project-based assessment ideas for [topic] suitable for [grade level] students. Include a brief description and what skills each project assesses.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A73",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 410,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Suggest five project-based assessment ideas for [topic] suitable for [grade level] students” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[topic]; [grade level]",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 73. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

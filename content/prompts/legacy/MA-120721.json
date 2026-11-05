@@ -1,0 +1,21 @@
+{
+  "id": "MA-120721",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 8",
+  "text": "Bina peta minda teks untuk tajuk \"Cara menjaga kebersihan sekolah\". Beri 3 cabang utama dengan 2 contoh tindakan bagi setiap cabang. Jangan cipta statistik.",
+  "source": "30_hari_tiktok_prompt_hasil_qa.md",
+  "location": "Prompt ke-8",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "SAMPEL 1 PUSINGAN (sebahagian)",
+  "row": 705,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Bina peta minda teks untuk tajuk \"Cara menjaga kebersihan sekolah\". Beri 3 cabang utama dengan 2…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 8.",
+  "solution": "Tugasan: Episod 8. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt sampel editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}

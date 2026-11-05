@@ -1,0 +1,21 @@
+{
+  "id": "MA-120849",
+  "category": "Video, Audio & Multimedia",
+  "type": "Skrip & Storyboard Video",
+  "title": "Local Ad Storyboard",
+  "text": "Bertindak sebagai pakar berpengalaman dalam iklan f&b dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Iklan 15 saat untuk kedai makan setempat dengan tawaran disahkan. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Sediakan hook, visual produk tulen, harga sebagai pemboleh ubah belum disahkan, vo, paparan lokasi dan cta. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22017",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 992,
+  "problem": "Hasil untuk projek «Iklan 15 saat untuk kedai makan setempat dengan tawaran disahkan.» belum disediakan mengikut keperluan teknikal, visual atau editorial yang…",
+  "use": "Merancang penghasilan video atau audio",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Rangka video, adegan, skrip atau senarai semakan penerbitan.",
+  "hook": "Idea video ada, tetapi jalan cerita dan arahan adegan masih kabur? Fokus: Local Ad Storyboard.",
+  "solution": "Tugasan: Local Ad Storyboard. Lengkapkan naratif, sasaran penonton, adegan, durasi dan arah audio/visual sebelum menggunakan prompt asal; semak kesinambungan.",
+  "cta": "Uji satu adegan dahulu, semak kesinambungan, kemudian lanjutkan ke video penuh.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

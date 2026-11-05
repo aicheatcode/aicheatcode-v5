@@ -1,15 +1,29 @@
-# Folder prompt milik anda
+# Arkib prompt boleh sunting — AICHEATCODE
 
-Satu fail JSON = satu prompt. Fail contoh sebenar: `USER-IA-001.json` (dipindahkan daripada `public/curated-prompts.json` tanpa mengubah teks prompt).
+**Folder ini ialah lokasi kerja untuk prompt anda.**
 
-## Cara edit sendiri
-1. Buka folder `content/prompts/` di GitHub.
-2. Klik fail prompt → ikon pensel → ubah **title, category, text** dan medan yang diperlukan. **Jangan ubah ID** untuk prompt yang sudah digunakan.
-3. Klik **Commit changes**. Pipeline membina semula `public/curated-prompts.json` dan menghantar perubahan kepada Worker selepas ujian lulus.
-4. Untuk prompt baharu, buat fail `USER-<ID-UNIK>.json`, salin struktur contoh dan isi teks sebenar, bukan data rekaan.
+- `content/prompts/legacy/`: **1,070** prompt asal yang memang ada dalam data V5. Satu fail JSON = satu prompt; ID asal dikekalkan.
+- `content/prompts/USER-IA-001.json`: 1 prompt tambahan pemilik daripada koleksi curated.
+- `public/prompt-catalog.json`: katalog indeks bagi **100,000 rekod sumber CSV**; jangan anggap ia 100,000 fail prompt yang dikarang dan diserahkan secara berasingan. Struktur ini masih mengandungi variasi/sumber katalog yang dijana.
+- `database/prompt-library.sqlite3`: pangkalan data SQLite asal; tidak dipadam.
 
-Semua rekod prompt asal dalam pangkalan data D1 dikekalkan. Folder ini menyimpan **prompt tambahan pemilik** sahaja; ia tidak secara automatik menukar semua 1,071 prompt D1 atau 100,570 rekod carian yang dijana daripada katalog.
+## Edit tanpa AI
 
-**Nota penting:** Perubahan melalui folder akan menggantikan kandungan prompt yang sama dalam fail terjana, tetapi jika CMS Editor mempunyai override bagi ID yang sama, override terbitan D1 mempunyai keutamaan. Domain `cannybrainy.com` hanya memaparkan perubahan jika routing DNS menunjuk ke Worker V5.
+Buka `content/prompts/legacy/` → pilih fail mengikut ID → ikon pensel → ubah kandungan `title`, `text`, `category` atau `source` → **Commit changes**.
 
-Tiada AI diperlukan untuk edit fail. Ini fail GitHub, bukan lagi editor visual di domain utama.
+Jangan tukar `id` untuk rekod sedia ada. Teks dalam `text` dihantar ke laman tanpa parafrasa. Build menjalankan `scripts/generate-owner-prompts.mjs` dan menulis semula `public/data.json` daripada fail-fail ini sambil mengekalkan susunan ID asal, dan turut menyusun `public/curated-prompts.json` daripada fail prompt di akar folder.
+
+**Perhatian:** Prompt yang mempunyai override editor terbitan D1 mungkin masih mengambil keutamaan; fungsi `/api/prompts` menggunakan jadual D1 yang berasingan. Ini bermakna perubahan folder tidak semestinya mengubah salinan rekod D1 API. Semak paparan sebenar sebelum menandakan terbitan berjaya.
+
+## Versi asal neon pink
+
+- `lib/home.ts`: struktur HTML playground neon asal.
+- `public/styles.css`: pink `#ff0099`, purple `#7000ff`, acid `#ccff00` dan animasi marquee/float/wobble.
+- Laman utama `/` dipulihkan kepada neon asal dalam branch ini. Susunan editorial masih boleh dilihat menggunakan `/?editorial=1`.
+- Laman belajar/projek terus mengekalkan laluan asal.
+
+## Bahan belum lengkap
+
+Audit terdahulu menunjukkan `15000+ Prompt Collection x Artscipes Hub.xlsx` mengandungi 15,032 baris prompt tidak kosong. Fail sumber tersebut tidak dijumpai untuk pengimportan menyeluruh dalam sesi ini. Jangan cipta rekod IMPORT15 berdasarkan ringkasan audit sahaja. Workbook `prompt aicheat code.xlsx` wujud sebagai fail berasingan; 149 rekod daripadanya sudah tercatat dalam data V5.
+
+**Jangan terbitkan sumber promt pihak ketiga ke website awam tanpa menyemak hak dan atribusi.** GitHub repositori ini terbuka kepada umum.

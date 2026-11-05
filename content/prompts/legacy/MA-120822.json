@@ -1,0 +1,21 @@
+{
+  "id": "MA-120822",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 49",
+  "text": "Reka kontrak serahan kandungan daripada penulis AI kepada editor: title, body, source_refs, evidence_status dan approval_status. Tentukan medan wajib, jenis data dan peraturan penolakan. Berikan satu contoh sah dan satu contoh tidak sah yang dilabel rekaan.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-49",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 694,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Reka kontrak serahan kandungan daripada penulis AI kepada editor: title, body, source_refs…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 49.",
+  "solution": "Tugasan: Episod 49. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

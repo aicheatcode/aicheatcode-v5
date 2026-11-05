@@ -27,6 +27,8 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Regenerate owner prompts from individual files
         run: node scripts/generate-owner-prompts.mjs
+      - name: Verify 1070 editable prompt files and original neon assets
+        run: node --test tests/owner-prompt-folder.test.mjs
       - name: SQLite verification
         run: pnpm run test:sqlite
       - name: Catalog tests

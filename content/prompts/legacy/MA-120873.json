@@ -1,0 +1,21 @@
+{
+  "id": "MA-120873",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Searchable Prompt SaaS",
+  "text": "Bertindak sebagai pakar berpengalaman dalam directory dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Bina direktori 10,000+ prompt yang boleh dicari tanpa memuatkan semua kad sekaligus. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Hasilkan reka bentuk mobile-first, weighted search, lazy loading, url detail, aria, empty states dan ujian automatik. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22041",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 917,
+  "problem": "Hasil untuk projek «Bina direktori 10,000+ prompt yang boleh dicari tanpa memuatkan semua kad sekaligus.» belum disediakan mengikut keperluan teknikal, visual atau…",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Searchable Prompt SaaS.",
+  "solution": "Tugasan: Searchable Prompt SaaS. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

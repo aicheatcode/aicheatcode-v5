@@ -1,0 +1,21 @@
+{
+  "id": "MA-120775",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 2",
+  "text": "Klasifikasikan tiga rekod ini sebagai SEDIA, TIDAK LENGKAP atau BERCANGGAH. A: Nama Kit A; harga RM20. B: Nama Kit B; harga tiada. C: Nama Kit C; harga RM20 dalam jadual dan RM25 dalam nota. Berikan label, bukti dan tindakan seterusnya. Jangan pilih sendiri harga yang bercanggah.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-2",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 636,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Klasifikasikan tiga rekod ini sebagai SEDIA, TIDAK LENGKAP atau BERCANGGAH. A: Nama Kit A; harga…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 2.",
+  "solution": "Tugasan: Episod 2. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

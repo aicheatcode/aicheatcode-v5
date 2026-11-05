@@ -1,0 +1,21 @@
+{
+  "id": "MA-120307",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Safely transitioning care",
+  "text": "I am a hospital discharge planner coordinating care for a 72-year-old woman recovering from a hip fracture. Outline how you would communicate key issues to home health, physical therapy, and the primary care physician.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B54",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 251,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a hospital discharge planner coordinating care for a 72-year-old woman recovering from a hip…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Safely transitioning care.",
+  "solution": "Tugasan: Safely transitioning care. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

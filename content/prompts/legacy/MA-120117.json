@@ -1,0 +1,21 @@
+{
+  "id": "MA-120117",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a 12-week syllabus for an undergraduate Introduction to [subject] course, including weekly topics, readings, assignments, and assessments.",
+  "text": "Create a 12-week syllabus for an undergraduate Introduction to [subject] course, including weekly topics, readings, assignments, and assessments.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A198",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 371,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a 12-week syllabus for an undergraduate Introduction to [subject] course, including…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[subject]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 198. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

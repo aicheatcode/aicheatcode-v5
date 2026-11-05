@@ -1,0 +1,21 @@
+{
+  "id": "MA-120087",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Rewrite this passage at three reading levels: beginner, intermediate, and advanced",
+  "text": "Rewrite this passage at three reading levels: beginner, intermediate, and advanced. Keep the key ideas the same, and provide a short comprehension question for each version.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A28",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 406,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Rewrite this passage at three reading levels: beginner, intermediate, and advanced” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 28. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

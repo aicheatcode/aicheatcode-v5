@@ -1,0 +1,21 @@
+{
+  "id": "MA-120840",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "Architectural Moodboard",
+  "text": "Bertindak sebagai pakar berpengalaman dalam papan mood reka bentuk dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Sudut ruang kerja freelancer tropika dengan cahaya matahari dan pengudaraan semula jadi. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Hasilkan papan material, swatch warna, lakaran susun atur, tiga visual reference dan senarai artifak. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22008",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 13,
+  "problem": "Hasil untuk projek «Sudut ruang kerja freelancer tropika dengan cahaya matahari dan pengudaraan semula jadi.» belum disediakan mengikut keperluan teknikal, visual…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi visual, imej atau cadangan pembetulan (hasil sasaran, belum diuji)",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Architectural Moodboard.",
+  "solution": "Tugasan: Architectural Moodboard. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

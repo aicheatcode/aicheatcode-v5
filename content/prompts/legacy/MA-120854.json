@@ -1,0 +1,21 @@
+{
+  "id": "MA-120854",
+  "category": "Video, Audio & Multimedia",
+  "type": "Audio & Podcast",
+  "title": "Podcast Episode Package",
+  "text": "Bertindak sebagai pakar berpengalaman dalam podcast dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Episod 12 minit tentang menggunakan AI untuk perancangan mengajar. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Hasilkan outline bersegmen, soalan hos, bab, intro/outro, nota rakaman dan pemeriksaan fakta. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22022",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 982,
+  "problem": "Hasil untuk projek «Episod 12 minit tentang menggunakan AI untuk perancangan mengajar.» belum disediakan mengikut keperluan teknikal, visual atau editorial yang…",
+  "use": "Merancang penghasilan video atau audio",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Skrip, storyboard, senarai babak atau rubrik semakan (hasil sasaran, belum diuji)",
+  "hook": "Idea video ada, tetapi jalan cerita dan arahan adegan masih kabur? Fokus: Podcast Episode Package.",
+  "solution": "Tugasan: Podcast Episode Package. Lengkapkan naratif, sasaran penonton, adegan, durasi dan arah audio/visual sebelum menggunakan prompt asal; semak kesinambungan.",
+  "cta": "Uji satu adegan dahulu, semak kesinambungan, kemudian lanjutkan ke video penuh.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

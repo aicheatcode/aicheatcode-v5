@@ -1,0 +1,21 @@
+{
+  "id": "MA-120083",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a 4-week plan for a high school literature class focused on character development",
+  "text": "Create a 4-week plan for a high school literature class focused on character development. Include weekly goals, key texts, assessments for learning, project ideas, and links to resources.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A8",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 372,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a 4-week plan for a high school literature class focused on character development” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 8. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

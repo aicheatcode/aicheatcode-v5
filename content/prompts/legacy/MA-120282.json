@@ -1,0 +1,21 @@
+{
+  "id": "MA-120282",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Generate compliance checklist",
+  "text": "Based on SOC 2 guidelines, create a checklist of IT-specific controls to review for an upcoming internal audit. Use this existing audit prep document as background. Organize the checklist by domain (e.g., access, change management, incident response).",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B20",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 883,
+  "problem": "Keperluan teknikal untuk “Generate compliance checklist” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Senarai semak, kriteria penerimaan atau pelan ujian untuk pengesahan hasil.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Generate compliance checklist.",
+  "solution": "Tugasan: Generate compliance checklist. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Semak dokumen, bidang kuasa dan fakta dengan profesional yang berkelayakan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

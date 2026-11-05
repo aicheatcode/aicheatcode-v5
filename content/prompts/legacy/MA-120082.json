@@ -1,0 +1,21 @@
+{
+  "id": "MA-120082",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a lesson plan for [grade level] science about ecosystems",
+  "text": "Create a lesson plan for [grade level] science about ecosystems. Include clear learning goals, a warm-up activity, guided practice, independent work, and an exit ticket.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A3",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 374,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a lesson plan for [grade level] science about ecosystems” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 3. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

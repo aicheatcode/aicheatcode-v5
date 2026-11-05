@@ -1,0 +1,21 @@
+{
+  "id": "MA-120099",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Using this [rubric], provide feedback for the student's work",
+  "text": "Using this [rubric], provide feedback for the student's work. Write one short comment per rubric category and include a final overall summary that reflects the rubric scores.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A92",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 415,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Using this [rubric], provide feedback for the student's work” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[rubric]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 92. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

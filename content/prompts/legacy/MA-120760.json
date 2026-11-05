@@ -1,0 +1,21 @@
+{
+  "id": "MA-120760",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 17",
+  "text": "Daripada fakta organisasi yang saya beri, susun draf geran tanpa mereka impak atau jumlah dana.",
+  "source": "AICHEATCODE_30_Hari_Draf_Editorial_Lengkap.md",
+  "location": "Prompt ke-17",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 626,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Daripada fakta organisasi yang saya beri, susun draf geran tanpa mereka impak atau jumlah dana.».",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 17.",
+  "solution": "Tugasan: Episod 17. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Adaptasi editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}

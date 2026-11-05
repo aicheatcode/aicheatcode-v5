@@ -1,0 +1,21 @@
+{
+  "id": "MA-120799",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 26",
+  "text": "Bina jadual dakwaan dan bukti untuk produk ini: fail HTML mempunyai fungsi carian luar talian selepas dimuat turun; tiada ujian penjimatan masa. Tulis tiga hook berasaskan fakta itu sahaja. Jangan reka peratus produktiviti, jumlah pembeli atau testimoni.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-26",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 657,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Bina jadual dakwaan dan bukti untuk produk ini: fail HTML mempunyai fungsi carian luar talian selepas…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 26.",
+  "solution": "Tugasan: Episod 26. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

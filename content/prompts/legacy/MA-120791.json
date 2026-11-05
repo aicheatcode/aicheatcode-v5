@@ -1,0 +1,21 @@
+{
+  "id": "MA-120791",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 18",
+  "text": "Write three image prompts for one blue ceramic cup on a white table. Keep subject, camera framing, background and material identical. Change only light direction: left, right, back. Mark the changed phrase in each prompt. Do not claim the generated outputs will be pixel-identical.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-18",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 630,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Write three image prompts for one blue ceramic cup on a white table. Keep subject, camera framing…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 18.",
+  "solution": "Tugasan: Episod 18. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

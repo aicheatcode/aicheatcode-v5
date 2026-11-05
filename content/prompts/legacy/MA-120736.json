@@ -1,0 +1,21 @@
+{
+  "id": "MA-120736",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 23",
+  "text": "Tulis kapsyen jualan Bahasa Melayu 2 ayat untuk tawaran contoh: \"Nasi lemak RM4, bungkus sahaja, Sabtu.\" Jangan cipta lokasi, diskaun, stok atau tempoh lain. Tambah CTA neutral.",
+  "source": "30_hari_tiktok_prompt_hasil_qa.md",
+  "location": "Prompt ke-23",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "SAMPEL 1 PUSINGAN (sebahagian)",
+  "row": 646,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Tulis kapsyen jualan Bahasa Melayu 2 ayat untuk tawaran contoh: \"Nasi lemak RM4, bungkus sahaja…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 23.",
+  "solution": "Tugasan: Episod 23. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt sampel editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}
