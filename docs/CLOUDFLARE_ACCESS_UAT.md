@@ -20,10 +20,9 @@ Settings > Secrets and variables > Actions > Variables:
 
 - CF_ACCESS_TEAM_DOMAIN: from Zero Trust > Settings > Custom Pages / team domain (example: my-team.cloudflareaccess.com; no https prefix).
 - CF_ACCESS_AUD: application audience identifier from the created Access app (32–64 hex characters).
-- CMS_OWNER_EMAIL: the actual owner's verified email; do not derive it from repository commit authors.
 - ACCESS_PROTECTED_HOSTS: comma-separated domain list. Include cannybrainy.com and aicheatcode-v5.aicheatcode-e4364da72f75.workers.dev. A protected Access app must cover all publicly reachable editor hostnames, or disable the unprotected route.
   
-GitHub SECRETS already used by CI: CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID. Never paste values in logs, commit them, or send them in chat.
+GitHub SECRETS used by CI: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, and CMS_OWNER_EMAIL (the owner's verified email; do not derive it from repository commit authors). Never paste values in logs, commit them, or send them in chat.
 
 Token must additionally have Access: Apps and Policies Read for the UAT script; Zone Read, DNS Read, Workers Scripts Read for DNS/proxy/Worker audit. To create Access app with the provided helper, use a separate least-privilege token with Access: Apps and Policies Write. Never escalate production token merely to run UAT.
 
@@ -34,7 +33,7 @@ Token must additionally have Access: Apps and Policies Read for the UAT script; 
 3. Add EACH of the five exact paths for cannybrainy.com and the equivalent five routes for the active workers.dev hostname (or implement Worker-level protection with carefully reviewed public exceptions).
 4. Policy Allow: Include > Emails > exactly one owner email. Do not use Everyone, email domain wildcard, Bypass, or a broad role group.
 5. Pick an available login method e.g. One-time PIN email or supported IdP. Set session duration 8 hours.
-6. Save. Copy Access AUD and team domain to GitHub Variables above.
+6. Save. Copy Access AUD and team domain to GitHub Variables above. Store CMS_OWNER_EMAIL as a GitHub Secret, not an ordinary variable.
 7. Trigger the existing production deployment only once configured, so the deploy script sets the three Worker vars. Verify Worker Settings > Variables & Secrets readback or use deployment log. Note: these three strings are not API tokens but they expose owner identity; keep the email out of public docs and debug logs.
 
 ## Optional API helper
@@ -55,6 +54,38 @@ It will refuse to overwrite a same-name application and requires BOTH the main a
 2. Cloudflare > Workers & Pages > aicheatcode-v5 > Settings > Domains & Routes. Add Custom Domain cannybrainy.com ONLY after staging + Access UAT. Cloudflare requires an active zone and will create its DNS and certificate for a supported Custom Domain.
 3. SSL/TLS > Overview: set Full or Full (Strict) as appropriate for any external origin. For a Worker Custom Domain, the decisive checks are edge certificate validity, correct Worker mapping and HTTPS response — changing SSL mode alone does not enable SSL.
 4. Do not remove the neon site's DNS or assets without an archived rollback point. Do not promise a one-minute DNS rollback.
+
+## Wrangler configuration model
+
+This repository deploys using `wrangler.production.jsonc` plus a generated `dist/server/wrangler.production.json`, not an operational `wrangler.toml`. The existing deployment script already copies the three Access environment bindings from GitHub into the generated Worker config when all are present.
+
+An equivalent TOML example for a separate Worker deployment is:
+
+```toml
+name = "aicheatcode-v5"
+compatibility_date = "2026-05-15"
+workers_dev = true
+
+[vars]
+CF_ACCESS_TEAM_DOMAIN = "YOUR-TEAM.cloudflareaccess.com"
+CF_ACCESS_AUD = "PASTE-REAL-ACCESS-APPLICATION-AUD"
+CMS_OWNER_EMAIL = "YOUR-VERIFIED-OWNER-EMAIL"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aicheatcode-v5-production"
+database_id = "PASTE-REAL-D1-UUID"
+```
+
+**Example only.** Do not commit the owner email or a fake D1 ID, and do not replace the real generated Worker configuration with this partial TOML. Secrets should remain GitHub Secrets or Worker Secrets. To add a Custom Domain after the zone is Active and safe cutover is approved:
+
+```toml
+[[routes]]
+pattern = "cannybrainy.com"
+custom_domain = true
+```
+
+Do not add the custom-domain route to the deployed config until Access, staging and rollback are verified.
 
 ## UAT read-only workflow
 
