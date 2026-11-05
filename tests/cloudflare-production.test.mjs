@@ -150,6 +150,7 @@ test('production configuration preserves the generated bundle and asset paths', 
     const config = JSON.parse(readFileSync(output));
     assert.equal(config.main, 'index.js'); assert.equal(config.assets.directory, '../client');
     assert.equal(config.d1_databases[0].database_id, id);
+    assert.deepEqual(config.routes, [{pattern:'cannybrainy.com',custom_domain:true}], 'Primary Custom Domain must be present in deployed Worker config');
     assert.equal(config.d1_databases[0].migrations_dir, '../../database/migrations');
     assert.equal(config.vars.DEPLOY_COMMIT, commit);
     assert.equal(config.rules[0].type, 'ESModule');
