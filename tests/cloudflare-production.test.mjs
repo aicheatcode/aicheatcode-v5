@@ -163,7 +163,7 @@ function workerFixture({ stale = false, editorAllowed = false, differentDatabase
     assert(!options.headers.Authorization, 'Control-plane API credentials must never be sent to the public Worker');
     const url = new URL(value);
     if (url.pathname === '/api/health') return Response.json({ status: 'ok', database: 'd1', promptCount: 1071, commit: stale ? 'c'.repeat(40) : commit });
-    if (url.pathname === '/') return new Response('<h1>AICHEATCODE</h1>');
+    if (url.pathname === '/') return new Response('<html><head><link rel="stylesheet" href="/hub.css?v=5"></head><body><h1>AICHEATCODE</h1></body></html>');
     if (url.pathname === '/api/prompts') return Response.json({ prompts: [{ id: differentDatabase ? 'WRONG-ID' : 'SOURCE-1', prompt_text: 'A real source text' }, { id: 'SOURCE-2', prompt_text: 'Another source text' }] });
     if (url.pathname === '/api/content') return Response.json({ prompts: [{ id: 'SOURCE-1' }] });
     if (url.pathname === '/api/editor') return new Response('{}', { status: editorAllowed ? 200 : 403 });

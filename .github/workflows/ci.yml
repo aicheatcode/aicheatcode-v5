@@ -140,12 +140,17 @@ jobs:
           CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
           CMS_OWNER_EMAIL: ${{ vars.CMS_OWNER_EMAIL }}
         run: pnpm run deploy:cloudflare
+      - name: Read-only domain DNS, HTTPS and V5 routing checks
+        if: ${{ success() }}
+        run: node scripts/check-primary-domain.mjs
       - name: Upload production verification evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cloudflare-production-evidence
-          path: .cloudflare/production/report.json
+          path: |
+            .cloudflare/production/report.json
+            .cloudflare/production/domain-report.json
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 7

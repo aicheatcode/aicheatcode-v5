@@ -49,7 +49,10 @@ export async function smokeProduction({ url, commit, minimumCount = 1071, firstP
   checks.push({ check: 'D1 health and deployed commit', status: 'PASS', promptCount: health.promptCount });
   const homepage = await request('/');
   assert.equal(homepage.status, 200);
-  assert((await homepage.text()).includes('AICHEATCODE'), 'Unexpected homepage');
+  const html=await homepage.text();
+  assert(html.includes('AICHEATCODE'), 'Unexpected homepage');
+  assert(html.includes('/hub.css'), 'Public homepage is not the V5 hub');
+  assert(!html.includes('/styles.css?v=20261102-repaired'), 'Neon legacy homepage must not be the production default');
   checks.push({ check: 'Homepage HTTP', status: 'PASS' });
   const promptsResponse = await request('/api/prompts?limit=2');
   assert.equal(promptsResponse.status, 200);
