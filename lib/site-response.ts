@@ -1,5 +1,6 @@
 import {home} from './home';
 import {CMS_PATH,applyCmsToHub,validatePage} from './cms-core.mjs';
+import {folderPages} from './folder-pages.generated.mjs';
 import {renderHub,publicPaths,registry,esc} from './hub.mjs';
 import base from '../public/data.json';
 import curated from '../public/curated-prompts.json';
@@ -23,7 +24,7 @@ export async function servePage(request:Request,db?:any){
  if(path==='/sitemap.xml'){
   // Only canonical, indexable public pages; omit query variants and private tools.
   let published=[];if(db){try{const rows=await db.prepare('SELECT path FROM cms_pages WHERE published_json IS NOT NULL').all();published=(rows.results||[]).map((x:any)=>x.path).filter((p:string)=>CMS_PATH.test(p));}catch(e){console.warn('CMS sitemap not ready',e);}}
-  const pages=[...new Set([...publicPaths,...published,'/prompt','/panduan','/sumber-status'])];
+  const pages=[...new Set([...publicPaths,...Object.keys(folderPages),...published,'/prompt','/panduan','/sumber-status'])];
   const xml='<?xml version="1.0" encoding="UTF-8"?>'+
    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+
    pages.map(p=>'<url><loc>'+esc(canonicalOrigin+p)+'</loc></url>').join('')+'</urlset>';
@@ -35,13 +36,14 @@ export async function servePage(request:Request,db?:any){
    if(row?.published_json)cmsDoc=validatePage(JSON.parse(row.published_json));
   }catch(e){console.error('CMS page unavailable; retaining baseline page',e);}
  }
+ const editablePage=cmsDoc||(!u.searchParams.has('legacy')&&u.searchParams.get('lang')!=='en'?folderPages[path]:null);
  const hub=renderHub(u);
  if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash))){
-  return new Response(cmsDoc?applyCmsToHub(hub.html,cmsDoc):hub.html,{headers:pageHeaders});
+  return new Response(editablePage?applyCmsToHub(hub.html,editablePage):hub.html,{headers:pageHeaders});
  }
- if(!hub&&cmsDoc){
+ if(!hub&&editablePage){
   const fallback=renderHub(new URL('/',u));
-  if(fallback)return new Response(applyCmsToHub(fallback.html,cmsDoc),{headers:pageHeaders});
+  if(fallback)return new Response(applyCmsToHub(fallback.html,editablePage),{headers:pageHeaders});
  }
  let m=titles[path],detail='',canonicalPath=path;
  if(path.startsWith('/prompt/')){
