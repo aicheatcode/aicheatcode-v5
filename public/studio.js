@@ -120,7 +120,7 @@ $('path').addEventListener('change',e=>{if(revision!==0){e.target.value=doc.path
 $('pageSelect').onchange=e=>load(e.target.value);
 $('newPage').onclick=()=>{const p=prompt('Laluan baharu (contoh: /projek/projek-baharu)');if(!p)return;load(p);doc.path=p;fields();dirty=true;};
 document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{if(doc.blocks.length>=40)return state('Maksimum 40 seksyen.',true);doc.blocks.push(freshBlock(b.dataset.add));dirty=true;drawBlocks();preview();});
-$('save').onclick=()=>save('save');$('publish').onclick=()=>save('publish');$('unpublish').onclick=()=>save('unpublish');$('export').onclick=exportFile;
+$('save').onclick=()=>save('save');$('preview').onclick=()=>{preview();$('previewBody').scrollIntoView({behavior:'smooth',block:'start'});state('Pratonton draf dipaparkan. Belum diterbitkan.');};$('publish').onclick=()=>save('publish');$('unpublish').onclick=()=>save('unpublish');$('export').onclick=exportFile;
 window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
 (async()=>{
  try{
