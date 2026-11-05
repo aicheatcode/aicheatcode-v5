@@ -28,6 +28,12 @@ try {
   assert.equal(seed.status, 0, seed.stderr);
   command(['d1', 'migrations', 'apply', 'DB', '--local', '--config', config, '--persist-to', join(temporary, 'state')]);
   command(['d1', 'execute', 'DB', '--local', '--config', config, '--persist-to', join(temporary, 'state'), '--file', join(temporary, 'seed.sql')]);
+  // Publish one disposable fixture in LOCAL D1; production data is untouched.
+  const fixture={path:'/tentang',title:'CMS QA: PASS',description:'Temporary integration test',blocks:[{id:'hero',type:'hero',title:'CMS LOCAL PASS',text:'Published document read from D1',label:'Belajar',href:'/belajar',image:'',alt:'',items:[]}]};
+  const encoded=JSON.stringify(fixture).replaceAll("'","''");
+  command(['d1','execute','DB','--local','--config',config,'--persist-to',join(temporary,'state'),'--command',"INSERT OR REPLACE INTO cms_pages(path,draft_json,published_json,revision,updated_by) VALUES ('/tentang','"+encoded+"','"+encoded+"',1,'local-test')"]);
+  const imageId='a'.repeat(64);
+  command(['d1','execute','DB','--local','--config',config,'--persist-to',join(temporary,'state'),'--command',"INSERT OR REPLACE INTO cms_media(id,mime,bytes,byte_size) VALUES ('"+imageId+"','image/png',x'89504e470d0a1a0a',8)"]);
   const listener = createServer();
   await new Promise(resolve => listener.listen(0, '127.0.0.1', resolve));
   const port = listener.address().port;
@@ -36,6 +42,18 @@ try {
   for (const stream of [worker.stdout, worker.stderr]) stream.on('data', data => { logs = (logs + data).slice(-20000); });
   const manifest = JSON.parse(readFileSync(join(temporary, 'seed-manifest.json')));
   const result = await smokeProduction({ url: `http://127.0.0.1:${port}`, commit, firstPromptId: manifest.ids[0], allowLocal: true, attempts: 40, delayMs: 250 });
+  const origin='http://127.0.0.1:'+port;
+  const cmsPage=await fetch(origin+'/tentang');
+  assert.equal(cmsPage.status,200);
+  assert((await cmsPage.text()).includes('CMS LOCAL PASS'),'Published CMS D1 fixture not rendered');
+  const denied=await fetch(origin+'/api/site-cms');assert.equal(denied.status,403,'Unauthenticated CMS must fail closed');await denied.text();
+  const mediaDenied=await fetch(origin+'/api/cms-media',{method:'POST',headers:{Origin:origin},body:new FormData()});assert.equal(mediaDenied.status,403);await mediaDenied.text();
+  const media=await fetch(origin+'/media/'+imageId);
+  assert.equal(media.status,200,'D1 image route is not available');
+  assert.equal(media.headers.get('content-type'),'image/png');
+  assert.equal((await media.arrayBuffer()).byteLength,8);
+  const studio=await fetch(origin+'/studio.html');assert.equal(studio.status,200);
+  assert((await studio.text()).includes('STUDIO PEMILIK'));
   console.log(JSON.stringify({ scope: 'LOCAL WORKER + D1', ...result }, null, 2));
 } catch (error) {
   console.error(logs.slice(-5000));

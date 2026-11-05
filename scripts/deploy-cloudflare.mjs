@@ -139,8 +139,14 @@ export function prepareConfig({ root = ROOT, accountId, database, workerName, co
     ...base, name: workerName, topLevelName: workerName, account_id: accountId,
     workers_dev: policy.workers_dev, preview_urls: policy.preview_urls,
     observability: policy.observability, vars: { ...base.vars, DEPLOY_COMMIT: commit },
+
     d1_databases: [{ binding: 'DB', database_name: database.name, database_id: database.id, migrations_dir: relative(dirname(output), resolve(root, 'database/migrations')).replaceAll('\\', '/') }],
   };
+  // Access settings are server-only Worker variables, not browser JavaScript.
+  const access = ['CF_ACCESS_TEAM_DOMAIN','CF_ACCESS_AUD','CMS_OWNER_EMAIL'];
+  const present = access.filter(key => typeof process.env[key] === 'string' && process.env[key].trim());
+  if (present.length && present.length !== access.length) throw Error('Set all three CMS Access variables, not a partial configuration');
+  for (const key of present) config.vars[key] = process.env[key].trim();
   writeFileSync(output, JSON.stringify(config, null, 2) + '\n');
   return output;
 }
@@ -189,6 +195,13 @@ export async function deployProduction() {
     }
     runWrangler(['d1', 'migrations', 'apply', 'DB', '--remote', '--config', config]);
     report.checks.push({ check: 'D1 migrations', status: 'PASS' });
+    // Import existing lessons/projects only as drafts. Never overwrite edits or publish automatically.
+    const cmsDrafts=spawnSync(process.execPath,[resolve(ROOT,'scripts/prepare-cms-seed.mjs'),'--output',output],{encoding:'utf8'});
+    assert.equal(cmsDrafts.status,0,'CMS draft seed generation failed: '+(cmsDrafts.stderr||''));
+    runWrangler(['d1','execute','DB','--remote','--config',config,'--file',resolve(output,'cms-drafts-seed.sql')]);
+    const cmsManifest=JSON.parse(readFileSync(resolve(output,'cms-drafts-manifest.json'),'utf8'));
+    report.checks.push({check:'CMS source pages migrated to unpublished drafts',status:'PASS',sourcePages:cmsManifest.count});
+    save();
     const prepared = spawnSync('python3', [resolve(ROOT, 'scripts/prepare-d1-seed.py'), '--output', output], { encoding: 'utf8' });
     assert.equal(prepared.status, 0, 'Source seed verification failed');
     const manifest = JSON.parse(readFileSync(resolve(output, 'seed-manifest.json'), 'utf8'));
