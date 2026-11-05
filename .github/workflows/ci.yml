@@ -33,6 +33,8 @@ jobs:
         run: node scripts/test-integration.mjs
       - name: Editor tests
         run: node scripts/test-editor.mjs
+      - name: Owner CMS authentication, schema and injection tests
+        run: node --test tests/site-cms.test.mjs tests/access-auth.test.mjs
       - name: Prompt flows
         run: node scripts/test-repaired-flows.mjs
       - name: Cloudflare deployment safeguards
