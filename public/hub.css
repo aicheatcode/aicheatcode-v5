@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
 [hidden]{display:none!important}.intro+div.pillars{margin-top:15px}
+
+.cms-section{max-width:950px}.cms-section p:not(.eyebrow){white-space:pre-line}.cms-hero-image img,.cms-section-image{display:block;width:100%;height:auto;object-fit:cover;border:1px solid #dddde6}.cms-hero-image{padding-block:20px 42px}.cms-section h2{max-width:850px}
