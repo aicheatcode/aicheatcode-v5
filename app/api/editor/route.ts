@@ -1,10 +1,13 @@
 import {env} from 'cloudflare:workers';
 import {initial,validate} from '../../../lib/editor.mjs';
+import {authorizeOwner} from '../../../lib/access-auth.mjs';
 export const dynamic='force-dynamic';
 const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'};
 // Identity headers must be stripped and reissued by a trusted authentication gateway.
 // Never expose this endpoint directly to untrusted clients without that gateway.
 async function allowed(r:Request){
+ // Cloudflare Access also enables the existing prompt editor for an authorised owner.
+ if(await authorizeOwner(r,env))return true;
  const secret=env.EDITOR_GATEWAY_SECRET;
  if(typeof secret!== 'string'||secret.length<32)return false;
  const id=r.headers.get('oai-authenticated-user-id')||'';
