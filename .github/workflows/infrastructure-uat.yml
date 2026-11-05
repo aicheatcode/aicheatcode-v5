@@ -1,0 +1,33 @@
+name: AICHEATCODE Infrastructure UAT
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read-only-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.1'
+      - name: Verify Access configuration and owner-only policy
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCESS_TEAM_DOMAIN: ${{ vars.CF_ACCESS_TEAM_DOMAIN }}
+          CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
+          CMS_OWNER_EMAIL: ${{ vars.CMS_OWNER_EMAIL }}
+          ACCESS_PROTECTED_HOSTS: ${{ vars.ACCESS_PROTECTED_HOSTS }}
+        run: node scripts/audit-access.mjs
+      - name: Verify Cloudflare zone, proxy, Worker mapping and SSL mode
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_CUSTOM_HOSTNAME: cannybrainy.com
+          CLOUDFLARE_WORKER_NAME: aicheatcode-v5
+        run: node scripts/audit-cloudflare-zone.mjs
+      - name: Verify public DNS, HTTPS and D1 via actual hostname
+        run: node scripts/audit-domain.mjs

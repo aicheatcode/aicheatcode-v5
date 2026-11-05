@@ -41,6 +41,8 @@ jobs:
         run: node --test tests/cms.test.mjs
       - name: Generate CMS content drafts from original lessons and projects
         run: node scripts/prepare-cms-seed.mjs --output .cloudflare/cms-qa
+      - name: Cloudflare Access infrastructure code tests
+        run: node --test tests/access-infra.test.mjs tests/provision-access.test.mjs
       - name: Server tests
         run: node scripts/test-server.mjs
       - name: Production build
