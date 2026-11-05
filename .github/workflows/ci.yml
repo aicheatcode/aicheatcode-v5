@@ -25,6 +25,8 @@ jobs:
           cache: pnpm
       - name: Install dependencies from lockfile
         run: pnpm install --frozen-lockfile
+      - name: Regenerate owner prompts from individual files
+        run: node scripts/generate-owner-prompts.mjs
       - name: SQLite verification
         run: pnpm run test:sqlite
       - name: Catalog tests
