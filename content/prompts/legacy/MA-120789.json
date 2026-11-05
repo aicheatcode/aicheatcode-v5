@@ -1,0 +1,21 @@
+{
+  "id": "MA-120789",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 16",
+  "text": "Create an original sculptural wordmark reading IDEA. Rounded letter geometry, pearl-white glossy front faces, deep blue side faces, soft studio key light from upper left, white background, generous negative space. Keep the word readable. No extra words. Treat this as an exploration, not a replacement for an existing logo.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-16",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 624,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Create an original sculptural wordmark reading IDEA. Rounded letter geometry, pearl-white glossy…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 16.",
+  "solution": "Tugasan: Episod 16. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

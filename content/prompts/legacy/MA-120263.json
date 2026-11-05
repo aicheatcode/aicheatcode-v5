@@ -1,0 +1,21 @@
+{
+  "id": "MA-120263",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Draft changelog and release notes",
+  "text": "Using this release summary, draft user-facing changelog notes for our next version release. Use a friendly, clear tone and group by category (e.g., new, improved, fixed). [Insert release notes or ticket list]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B30",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 873,
+  "problem": "Keperluan teknikal untuk “Draft changelog and release notes” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Insert release notes or ticket list]",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Draft changelog and release notes.",
+  "solution": "Tugasan: Draft changelog and release notes. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

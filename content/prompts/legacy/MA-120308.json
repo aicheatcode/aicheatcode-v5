@@ -1,0 +1,21 @@
+{
+  "id": "MA-120308",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Checking against the evidence",
+  "text": "I am a cardiologist reviewing care for a 65-year-old man with new-onset atrial fibrillation.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B64",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 242,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a cardiologist reviewing care for a 65-year-old man with new-onset atrial fibrillation.».",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Checking against the evidence.",
+  "solution": "Tugasan: Checking against the evidence. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

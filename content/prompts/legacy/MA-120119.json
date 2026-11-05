@@ -1,0 +1,21 @@
+{
+  "id": "MA-120119",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Write a case study about [scenario] for a [class name] course.",
+  "text": "Write a case study about [scenario] for a [class name] course.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A208",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 416,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Write a case study about [scenario] for a [class name] course.” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[scenario]; [class name]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 208. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

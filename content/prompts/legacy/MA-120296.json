@@ -1,0 +1,21 @@
+{
+  "id": "MA-120296",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Suggest system monitoring improvements",
+  "text": "Review our monitoring setup for [insert system] based on the current configuration and recent alert history. Identify 2–3 areas for improvement, such as gaps in alert coverage, noise reduction, or metrics tuning. Present the suggestions in a short internal memo.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B49",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 920,
+  "problem": "Keperluan teknikal untuk “Suggest system monitoring improvements” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[insert system]",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Suggest system monitoring improvements.",
+  "solution": "Tugasan: Suggest system monitoring improvements. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

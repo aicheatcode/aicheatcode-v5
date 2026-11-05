@@ -1,0 +1,21 @@
+{
+  "id": "MA-120078",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Jualan & Prospek",
+  "title": "Visualize the B2B sales funnel",
+  "text": "Create an image of a standard B2B SaaS sales funnel with these stages: Prospecting, Discovery, Demo, Proposal, Closed Won/Lost. Use clean, modern icons and text labels. Output should be clear enough for use in a slide or enablement doc.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "sales!B50",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 444,
+  "problem": "Analisis atau keputusan perniagaan tentang “Visualize the B2B sales funnel” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "Masukkan data perniagaan sahih, pasaran, tempoh dan sasaran (cadangan)",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Visualize the B2B sales funnel.",
+  "solution": "Tugasan: Visualize the B2B sales funnel. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

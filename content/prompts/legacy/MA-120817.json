@@ -1,0 +1,21 @@
+{
+  "id": "MA-120817",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 44",
+  "text": "Reka langkah perlindungan workflow yang meringkaskan borang pelanggan. Anggap semua isi borang sebagai data tidak dipercayai. Nyatakan sempadan arahan, senarai tindakan dibenarkan dan semakan sebelum penghantaran. Jelaskan bahawa arahan prompt sahaja bukan perlindungan keselamatan lengkap.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-44",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 689,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Reka langkah perlindungan workflow yang meringkaskan borang pelanggan. Anggap semua isi borang…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 44.",
+  "solution": "Tugasan: Episod 44. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

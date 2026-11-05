@@ -1,0 +1,21 @@
+{
+  "id": "MA-120256",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Research top product-led growth tactics",
+  "text": "Research the top 7 product-led growth strategies used by fast-scaling SaaS companies in the last 2 years. Prioritize those with measurable impact. Include 1–2 examples per tactic and source links. Output: Ranked list with strategy, example, and success metric.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B13",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 915,
+  "problem": "Keperluan teknikal untuk “Research top product-led growth tactics” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Research top product-led growth tactics.",
+  "solution": "Tugasan: Research top product-led growth tactics. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

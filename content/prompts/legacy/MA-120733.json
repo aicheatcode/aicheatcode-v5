@@ -1,0 +1,21 @@
+{
+  "id": "MA-120733",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 20",
+  "text": "Buat jadual berurutan tepat 100 minit untuk tugas ini: rakam video 45 minit, sediakan sari kata 30 minit, semak fakta 25 minit. Bermula pada minit 0. Jangan tambah masa yang tiada.",
+  "source": "30_hari_tiktok_prompt_hasil_qa.md",
+  "location": "Prompt ke-20",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "SAMPEL 1 PUSINGAN (sebahagian)",
+  "row": 637,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Buat jadual berurutan tepat 100 minit untuk tugas ini: rakam video 45 minit, sediakan sari kata 30…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 20.",
+  "solution": "Tugasan: Episod 20. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt sampel editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}

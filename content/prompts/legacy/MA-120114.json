@@ -1,0 +1,21 @@
+{
+  "id": "MA-120114",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Give me five project ideas that combine history and art for middle school students.",
+  "text": "Give me five project ideas that combine history and art for middle school students.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A179",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 394,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Give me five project ideas that combine history and art for middle school students.” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 179. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

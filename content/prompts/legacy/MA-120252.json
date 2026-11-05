@@ -1,0 +1,21 @@
+{
+  "id": "MA-120252",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "UI/UX & Prototaip",
+  "title": "Compare competitors’ onboarding UX",
+  "text": "Research how 3 key competitors structure their onboarding flow for new users. Include screenshots, key steps, and points of friction or delight. Synthesize a comparison table and recommendations for improvement. Target product: [Insert product]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B9",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 935,
+  "problem": "Keperluan teknikal untuk “Compare competitors’ onboarding UX” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Insert product]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Compare competitors’ onboarding UX.",
+  "solution": "Tugasan: Compare competitors’ onboarding UX. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

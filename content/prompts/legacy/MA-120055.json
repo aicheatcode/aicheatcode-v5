@@ -1,0 +1,21 @@
+{
+  "id": "MA-120055",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Kewangan & Analisis Perniagaan",
+  "title": "ESG finance impact visual",
+  "text": "Create a visual showing how ESG initiatives can impact finance metrics. Show links between sustainability investments and cost savings, risk mitigation, and investor interest. Use a modern, green-themed design with arrows.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "finance !B47",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 454,
+  "problem": "Analisis atau keputusan perniagaan tentang “ESG finance impact visual” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "Masukkan data perniagaan sahih, pasaran, tempoh dan sasaran (cadangan)",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: ESG finance impact visual.",
+  "solution": "Tugasan: ESG finance impact visual. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

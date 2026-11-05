@@ -1,0 +1,21 @@
+{
+  "id": "MA-120102",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a list of 5–7 simple, positive, age-appropriate class rules for a [grade level] classroom",
+  "text": "Create a list of 5–7 simple, positive, age-appropriate class rules for a [grade level] classroom. Keep the language friendly and explain why each rule matters.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A111",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 375,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a list of 5–7 simple, positive, age-appropriate class rules for a [grade level]…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 111. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

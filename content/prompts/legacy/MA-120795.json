@@ -1,0 +1,21 @@
+{
+  "id": "MA-120795",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 22",
+  "text": "Create a continuity checklist for a fictional adult presenter: blue jacket, white shirt, watch on left wrist, white notebook. Separate fixed identity and wardrobe details from permitted changes in pose and camera angle. Include checks for hands, props and lighting. Do not promise perfect consistency from text alone.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-22",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 645,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Create a continuity checklist for a fictional adult presenter: blue jacket, white shirt, watch on…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 22.",
+  "solution": "Tugasan: Episod 22. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

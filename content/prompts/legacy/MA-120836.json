@@ -1,0 +1,21 @@
+{
+  "id": "MA-120836",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "Editorial Product Carousel",
+  "text": "Bertindak sebagai pakar berpengalaman dalam carousel produk dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Siri 5 kad menjelaskan manfaat planner produktiviti tanpa dakwaan palsu. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Hasilkan konsep visual setiap slaid, 1 headline dan 1 takeaway; konsisten grid, warna, aksesibiliti dan saiz media. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22004",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 27,
+  "problem": "Hasil untuk projek «Siri 5 kad menjelaskan manfaat planner produktiviti tanpa dakwaan palsu.» belum disediakan mengikut keperluan teknikal, visual atau editorial…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Draf kandungan carousel yang boleh disemak dan disesuaikan.",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Editorial Product Carousel.",
+  "solution": "Tugasan: Editorial Product Carousel. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

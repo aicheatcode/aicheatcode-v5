@@ -1,0 +1,21 @@
+{
+  "id": "MA-120261",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Plan A/B testing experiments",
+  "text": "Review this list of product UI changes and propose 2 A/B test setups. Include hypothesis, success metrics, and potential outcomes. [Insert UI changes or user goals]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B23",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 909,
+  "problem": "Keperluan teknikal untuk “Plan A/B testing experiments” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Insert UI changes or user goals]",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Plan A/B testing experiments.",
+  "solution": "Tugasan: Plan A/B testing experiments. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

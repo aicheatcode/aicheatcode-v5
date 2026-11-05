@@ -1,0 +1,21 @@
+{
+  "id": "MA-120106",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a set of routines for the classroom",
+  "text": "Create a set of routines for the classroom. These routines should cover transitions, distributing materials, and cleaning up at the end of class for a [grade level] class. Also, provide short responses for these situations: what to do if a student refuses to join an activity, if the class gets too loud, and if a group becomes off-task.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A131",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 378,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a set of routines for the classroom” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 131. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

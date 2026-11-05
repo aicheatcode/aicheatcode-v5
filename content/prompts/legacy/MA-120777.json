@@ -1,0 +1,21 @@
+{
+  "id": "MA-120777",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 4",
+  "text": "Label tiket sebagai AKSES, BAYARAN atau SEMAK jika kedua-duanya hadir. Contoh: tidak boleh login → AKSES; mahu refund → BAYARAN. Klasifikasikan: Saya tidak boleh login dan mahu refund. Nyatakan frasa yang menyokong label. Jangan paksa satu kategori jika dua niat jelas.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-4",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 684,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Label tiket sebagai AKSES, BAYARAN atau SEMAK jika kedua-duanya hadir. Contoh: tidak boleh login →…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 4.",
+  "solution": "Tugasan: Episod 4. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

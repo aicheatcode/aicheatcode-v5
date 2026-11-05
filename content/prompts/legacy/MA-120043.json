@@ -1,0 +1,21 @@
+{
+  "id": "MA-120043",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Kewangan & Analisis Perniagaan",
+  "title": "Prepare board meeting talking points",
+  "text": "Draft financial talking points for an upcoming board meeting. Use our [insert Q2 results or P&L summary] as input. Write the talking points in bullet format, focusing on topline metrics and risk/upsides.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "finance !B25",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 462,
+  "problem": "Analisis atau keputusan perniagaan tentang “Prepare board meeting talking points” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[insert Q2 results or P&L summary]",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Prepare board meeting talking points.",
+  "solution": "Tugasan: Prepare board meeting talking points. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120782",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 9",
+  "text": "Rancang kerja 90 minit. Audit mengambil 40 minit; penulisan 30 minit selepas audit; reka bentuk 50 minit selepas penulisan. Tunjukkan jumlah masa dan jurang kapasiti. Cadangkan jadual yang boleh dilaksanakan tanpa memendekkan anggaran secara senyap. Jangan dakwa semua tugas boleh siap.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-9",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 710,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Rancang kerja 90 minit. Audit mengambil 40 minit; penulisan 30 minit selepas audit; reka bentuk 50…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 9.",
+  "solution": "Tugasan: Episod 9. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-118933",
+  "category": "Automasi & Data",
+  "type": "Automasi Proses",
+  "title": "Panduan keselamatan akaun",
+  "text": "Anda ialah Strategis Kandungan, Editor Bahasa Melayu Malaysia dan Pemeriksa Fakta untuk kategori SaaS & Automasi.\n\nTUGAS: Hasilkan kandungan carousel 6 slaid tentang ‘Panduan keselamatan akaun’ untuk Instagram / LinkedIn. Objektif: DIDIK — berikan langkah yang boleh dilaksanakan. Sasaran awal: pengguna baharu aplikasi perniagaan.\n\nINPUT WAJIB (ganti kurungan dengan maklumat sebenar):\n- Jenama: [Nama jenama]\n- Produk/servis: [Produk atau perkhidmatan]\n- Audiens: [Sasaran audiens]\n- Cabaran: [Masalah audiens]\n- Fakta/bukti sah: [Bukti atau fakta disahkan]\n- Tindakan/URL: [CTA atau pautan rasmi]\n- Nada: [Nada jenama]\n\nPENGETAHUAN EDITORIAL KHUSUS:\n- Tindakan berguna yang perlu ditunjukkan: terangkan MFA, peranan dan kawalan akses.\n- Risiko/mitos yang mesti dibetulkan: meminta kata laluan melalui sokongan.\n- Konteks penawaran contoh: perisian produktiviti berasaskan web.\n\nKEHENDAK OUTPUT:\nTulis tepat enam slaid bernombor S1–S6. Setiap slaid ada tajuk maksimum 8 perkataan dan teks isi maksimum 24 perkataan. S1 hook, S2 masalah, S3 tindakan, S4 kesilapan, S5 contoh aplikasi, S6 satu CTA. Sertakan cadangan visual ringkas bagi setiap slaid.\nBahasa: Bahasa Melayu Malaysia yang asli, bukan terjemahan kaku atau bahasa Indonesia. Fokus satu idea utama, contoh dekat dengan pengguna Malaysia, dan mesej spesifik yang boleh dilaksanakan. Tautkan kandungan kepada input sebenar; jangan meneka nama, harga, statistik, testimoni, lesen, polisi, kajian atau ciri produk. Jika maklumat kritikal tiada, tulis [PERLU DISAHKAN] pada tempatnya dan elakkan sebarang dakwaan. Nota keselamatan tambahan: jangan mengaku fungsi atau integrasi tersedia tanpa ujian.\n\nKRITERIA LULUS: topik jelas; kandungan mengikut objektif didik; struktur carousel 6 slaid tepat; fakta boleh disemak; CTA satu tindakan; tulisan mudah dibaca.\nPAPARKAN OUTPUT AKHIR SAHAJA, diikuti satu baris 'Semakan editor:' dengan isu yang masih perlu disahkan (jika ada).",
+  "source": "PAKEJ_5000_PROMPT_KANDUNGAN_BM.zip",
+  "location": "5000_prompt_bm.csv:baris 3902",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 137,
+  "problem": "Bahan  carousel 6 slaid tentang “Panduan keselamatan akaun” belum disusun untuk audiens sasaran.",
+  "use": "Menganalisis data dan mengautomasi aliran kerja",
+  "inputs": "[Nama jenama]; [Produk atau perkhidmatan]; [Sasaran audiens]; [Masalah audiens]",
+  "output": "Draf Carousel 6 slaid tentang Panduan keselamatan akaun; perlu semakan fakta sebelum terbit.",
+  "hook": "Masih melakukan langkah manual atau mengesan ralat data terlalu lewat? Fokus: Panduan keselamatan akaun.",
+  "solution": "Tugasan: Panduan keselamatan akaun. Lukiskan input→proses→output, tentukan sumber data, pengesahan, exception handling dan log; uji pada data contoh.",
+  "cta": "Cuba pada data sampel tanpa data sensitif; periksa output dan log sebelum automasi sebenar.",
+  "recordType": "Templat kandungan",
+  "qa": "BELUM DIUJI – INFERENS"
+}

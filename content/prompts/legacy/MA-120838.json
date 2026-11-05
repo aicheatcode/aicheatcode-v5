@@ -1,0 +1,21 @@
+{
+  "id": "MA-120838",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "UI Screenshot Mockup",
+  "text": "Bertindak sebagai pakar berpengalaman dalam mockup antaramuka dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Paparan sebenar aplikasi pengurusan kelas: senarai tugasan, jadual dan laporan. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Tetapkan komponen ui, keadaan kosong/loading/error, kontras dan kandungan malaysia; larang butang tidak berfungsi dalam prototaip. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22006",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 36,
+  "problem": "Hasil untuk projek «Paparan sebenar aplikasi pengurusan kelas: senarai tugasan, jadual dan laporan.» belum disediakan mengikut keperluan teknikal, visual atau…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi atau prototaip sistem, tertakluk kepada ujian fungsi dan keselamatan.",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: UI Screenshot Mockup.",
+  "solution": "Tugasan: UI Screenshot Mockup. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

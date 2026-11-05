@@ -1,0 +1,21 @@
+{
+  "id": "MA-120285",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Draft IT onboarding checklist",
+  "text": "Create a checklist for onboarding new hires from an IT perspective. Include key steps for account provisioning, security training, and hardware setup. Use this outline of our current process, and present the checklist organized by day or week.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B28",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 874,
+  "problem": "Keperluan teknikal untuk “Draft IT onboarding checklist” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Senarai semak, kriteria penerimaan atau pelan ujian untuk pengesahan hasil.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Draft IT onboarding checklist.",
+  "solution": "Tugasan: Draft IT onboarding checklist. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

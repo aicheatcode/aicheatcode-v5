@@ -1,0 +1,21 @@
+{
+  "id": "MA-120780",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 7",
+  "text": "Bina nota serahan daripada teks yang saya tampal selepas ini. Gunakan tajuk Matlamat, Sumber dan versi, Keputusan disahkan, Andaian, Isu terbuka, Langkah seterusnya. Jika input belum diberi, minta input. Jangan menganggap keputusan lama masih sah jika versi baharu bercanggah.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-7",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 704,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Bina nota serahan daripada teks yang saya tampal selepas ini. Gunakan tajuk Matlamat, Sumber dan…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 7.",
+  "solution": "Tugasan: Episod 7. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

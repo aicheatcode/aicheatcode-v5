@@ -1,0 +1,21 @@
+{
+  "id": "MA-120283",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Validate access controls",
+  "text": "Review this access matrix of users, roles, and systems. Check whether each user’s access level follows our least-privilege policy. Identify any potential overprovisioning, and provide a table listing users with permissions that may need to be scaled back.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B21",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 927,
+  "problem": "Keperluan teknikal untuk “Validate access controls” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Validate access controls.",
+  "solution": "Tugasan: Validate access controls. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

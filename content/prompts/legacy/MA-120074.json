@@ -1,0 +1,21 @@
+{
+  "id": "MA-120074",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Jualan & Prospek",
+  "title": "Visualize deal velocity across quarters",
+  "text": "Use this CRM export to calculate average deal velocity per quarter (days from lead to close). Data: [Upload with open/close dates]. Show velocity trend in a simple chart and summarize the trendline.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "sales!B41",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 442,
+  "problem": "Analisis atau keputusan perniagaan tentang “Visualize deal velocity across quarters” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[Upload with open/close dates]",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Visualize deal velocity across quarters.",
+  "solution": "Tugasan: Visualize deal velocity across quarters. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

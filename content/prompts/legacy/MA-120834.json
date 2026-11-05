@@ -1,0 +1,21 @@
+{
+  "id": "MA-120834",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "Poster Kelas AI",
+  "text": "Bertindak sebagai pakar berpengalaman dalam poster pendidikan dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Poster bengkel AI untuk guru sekolah menengah dengan maklumat tarikh, masa dan pendaftaran. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Tetapkan grid editorial tiga lajur, kontras wcag dan kotak teks yang disediakan dalam editor; hasilkan versi a4 dan story 9:16. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22002",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 34,
+  "problem": "Hasil untuk projek «Poster bengkel AI untuk guru sekolah menengah dengan maklumat tarikh, masa dan pendaftaran.» belum disediakan mengikut keperluan teknikal…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi visual, imej atau cadangan pembetulan (hasil sasaran, belum diuji)",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Poster Kelas AI.",
+  "solution": "Tugasan: Poster Kelas AI. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

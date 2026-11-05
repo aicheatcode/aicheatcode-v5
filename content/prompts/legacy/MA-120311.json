@@ -1,0 +1,21 @@
+{
+  "id": "MA-120311",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Using your system to guide care",
+  "text": "Summarize the recommended initial evaluation for new cognitive concerns in an older adult with prior ischemic stroke. Use our organization’s approved pathway if available and link to the relevant sections. Include key red flags, the focused history/exam (including collateral and meds), recommended screening tool(s), baseline labs, and when imaging is indicated.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B76",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 252,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Summarize the recommended initial evaluation for new cognitive concerns in an older adult with prior…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "Spesifikasi atau prototaip sistem, tertakluk kepada ujian fungsi dan keselamatan.",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Using your system to guide care.",
+  "solution": "Tugasan: Using your system to guide care. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

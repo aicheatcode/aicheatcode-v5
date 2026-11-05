@@ -1,0 +1,21 @@
+{
+  "id": "MA-120841",
+  "category": "AI Imej & Fotografi",
+  "type": "Penjanaan Imej AI",
+  "title": "Learning Flashcard Set",
+  "text": "Bertindak sebagai pakar berpengalaman dalam kad imbas pendidikan dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: 10 kad imbas topik kosa kata Bahasa Melayu untuk murid sekolah rendah. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Tetapkan teks depan dan belakang, saiz cetakan, ikon mudah, semakan bahasa dan skema nombor fail. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22009",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 29,
+  "problem": "Hasil untuk projek «10 kad imbas topik kosa kata Bahasa Melayu untuk murid sekolah rendah.» belum disediakan mengikut keperluan teknikal, visual atau editorial…",
+  "use": "Menjana dan menyemak visual berasaskan AI",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Spesifikasi visual, imej atau cadangan pembetulan (hasil sasaran, belum diuji)",
+  "hook": "Visual AI tidak menepati rujukan, komposisi atau tahap realisme yang diperlukan? Fokus: Learning Flashcard Set.",
+  "solution": "Tugasan: Learning Flashcard Set. Nyatakan subjek, rujukan, komposisi, pencahayaan dan unsur yang mesti kekal; jana atau sunting mengikut prompt asal dan semak artifak.",
+  "cta": "Gunakan satu rujukan visual, uji prompt asal dan audit butiran yang berubah secara tidak sengaja.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

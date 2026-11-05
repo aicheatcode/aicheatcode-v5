@@ -1,0 +1,21 @@
+{
+  "id": "MA-116853",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Nota pelajaran mikro",
+  "text": "Anda ialah Strategis Kandungan, Editor Bahasa Melayu Malaysia dan Pemeriksa Fakta untuk kategori Pendidikan & Kursus.\n\nTUGAS: Hasilkan kandungan carousel 6 slaid tentang ‘Nota pelajaran mikro’ untuk Instagram / LinkedIn. Objektif: DIDIK — berikan langkah yang boleh dilaksanakan. Sasaran awal: peserta kursus aras asas.\n\nINPUT WAJIB (ganti kurungan dengan maklumat sebenar):\n- Jenama: [Nama jenama]\n- Produk/servis: [Produk atau perkhidmatan]\n- Audiens: [Sasaran audiens]\n- Cabaran: [Masalah audiens]\n- Fakta/bukti sah: [Bukti atau fakta disahkan]\n- Tindakan/URL: [CTA atau pautan rasmi]\n- Nada: [Nada jenama]\n\nPENGETAHUAN EDITORIAL KHUSUS:\n- Tindakan berguna yang perlu ditunjukkan: bahagikan konsep kepada langkah kecil dan contoh.\n- Risiko/mitos yang mesti dibetulkan: memasukkan tiga topik berat dalam satu nota.\n- Konteks penawaran contoh: modul pembelajaran praktikal.\n\nKEHENDAK OUTPUT:\nTulis tepat enam slaid bernombor S1–S6. Setiap slaid ada tajuk maksimum 8 perkataan dan teks isi maksimum 24 perkataan. S1 hook, S2 masalah, S3 tindakan, S4 kesilapan, S5 contoh aplikasi, S6 satu CTA. Sertakan cadangan visual ringkas bagi setiap slaid.\nBahasa: Bahasa Melayu Malaysia yang asli, bukan terjemahan kaku atau bahasa Indonesia. Fokus satu idea utama, contoh dekat dengan pengguna Malaysia, dan mesej spesifik yang boleh dilaksanakan. Tautkan kandungan kepada input sebenar; jangan meneka nama, harga, statistik, testimoni, lesen, polisi, kajian atau ciri produk. Jika maklumat kritikal tiada, tulis [PERLU DISAHKAN] pada tempatnya dan elakkan sebarang dakwaan. Nota keselamatan tambahan: jangan menjanjikan sijil atau kelayakan tanpa bukti.\n\nKRITERIA LULUS: topik jelas; kandungan mengikut objektif didik; struktur carousel 6 slaid tepat; fakta boleh disemak; CTA satu tindakan; tulisan mudah dibaca.\nPAPARKAN OUTPUT AKHIR SAHAJA, diikuti satu baris 'Semakan editor:' dengan isu yang masih perlu disahkan (jika ada).",
+  "source": "PAKEJ_5000_PROMPT_KANDUNGAN_BM.zip",
+  "location": "5000_prompt_bm.csv:baris 1822",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 401,
+  "problem": "Bahan  carousel 6 slaid tentang “Nota pelajaran mikro” belum disusun untuk audiens sasaran.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[Nama jenama]; [Produk atau perkhidmatan]; [Sasaran audiens]; [Masalah audiens]",
+  "output": "Draf Carousel 6 slaid tentang Nota pelajaran mikro; perlu semakan fakta sebelum terbit.",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami? Fokus: Nota pelajaran mikro.",
+  "solution": "Tugasan: Nota pelajaran mikro. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Templat kandungan",
+  "qa": "BELUM DIUJI – INFERENS"
+}

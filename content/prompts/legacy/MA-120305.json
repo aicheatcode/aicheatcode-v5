@@ -1,0 +1,21 @@
+{
+  "id": "MA-120305",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Documenting the patient encounter",
+  "text": "I am a pediatrician seeing a 3-year-old boy with fever, cough, and wheezing. Write a concise but thorough clinical note for suspected viral bronchiolitis, including history, exam, assessment, and plan.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B28",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 245,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a pediatrician seeing a 3-year-old boy with fever, cough, and wheezing. Write a concise but…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Documenting the patient encounter.",
+  "solution": "Tugasan: Documenting the patient encounter. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan. Hasil bukan pengganti penilaian klinikal atau nasihat kesihatan profesional.",
+  "cta": "Gunakan sebagai draf pembelajaran; untuk keputusan klinikal, sahkan dengan profesional kesihatan bertauliah.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

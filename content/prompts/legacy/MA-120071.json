@@ -1,0 +1,21 @@
+{
+  "id": "MA-120071",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Jualan & Prospek",
+  "title": "Find customer proof points in the public domain",
+  "text": "Research recent online reviews, social mentions, and testimonials about [our product OR competitor product]. Focus on what customers are praising or criticizing. Summarize top 5 quotes, what persona each came from, and where it was posted. Include links.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "sales!B33",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 431,
+  "problem": "Analisis atau keputusan perniagaan tentang “Find customer proof points in the public domain” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[our product OR competitor product]",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Find customer proof points in the public domain.",
+  "solution": "Tugasan: Find customer proof points in the public domain. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

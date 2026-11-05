@@ -1,0 +1,21 @@
+{
+  "id": "MA-120751",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 8",
+  "text": "Ringkaskan dokumen undang-undang yang saya berikan; asingkan fakta, isu dan soalan untuk peguam.",
+  "source": "AICHEATCODE_30_Hari_Draf_Editorial_Lengkap.md",
+  "location": "Prompt ke-8",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 706,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Ringkaskan dokumen undang-undang yang saya berikan; asingkan fakta, isu dan soalan untuk peguam.».",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 8.",
+  "solution": "Tugasan: Episod 8. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Adaptasi editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}

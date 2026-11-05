@@ -1,0 +1,21 @@
+{
+  "id": "MA-120036",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Kewangan & Analisis Perniagaan",
+  "title": "Compare global tax regulations",
+  "text": "I manage global finance compliance. Research and compare corporate tax rates and reporting requirements in [insert countries]. Focus on tax incentives, reporting thresholds, and penalties. Deliver a comparison chart with links to official sources.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "finance !B8",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 448,
+  "problem": "Analisis atau keputusan perniagaan tentang “Compare global tax regulations” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[insert countries]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Compare global tax regulations.",
+  "solution": "Tugasan: Compare global tax regulations. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

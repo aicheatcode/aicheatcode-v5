@@ -1,0 +1,21 @@
+{
+  "id": "MA-120280",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Assess global data residency laws",
+  "text": "I’m an IT Compliance Lead planning a global data storage architecture. Research 2025 data residency requirements across the EU, US, APAC, and LATAM. Include regulatory restrictions and preferred cloud regions. Cite official documentation and summarize findings in a table grouped by region.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B18",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 850,
+  "problem": "Keperluan teknikal untuk “Assess global data residency laws” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Jadual, formula atau aliran data yang boleh diuji dengan contoh sebenar.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Assess global data residency laws.",
+  "solution": "Tugasan: Assess global data residency laws. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120084",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Generate a weekly lesson plan for [grade level] math that focuses on multiplication strategies",
+  "text": "Generate a weekly lesson plan for [grade level] math that focuses on multiplication strategies. Include daily learning goals, simple activities, and a review task for the end of the week.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A13",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 393,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Generate a weekly lesson plan for [grade level] math that focuses on multiplication strategies” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 13. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

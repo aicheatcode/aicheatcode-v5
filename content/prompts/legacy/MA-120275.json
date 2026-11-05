@@ -1,0 +1,21 @@
+{
+  "id": "MA-120275",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Compare feature adoption across customer segments",
+  "text": "Use this data to compare how small business vs. enterprise customers adopt our key features. Highlight major differences, usage frequencies, and retention impact. Format output as a table with insights. [Upload CSV or describe dataset]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B52",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 856,
+  "problem": "Keperluan teknikal untuk “Compare feature adoption across customer segments” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Upload CSV or describe dataset]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Compare feature adoption across customer segments.",
+  "solution": "Tugasan: Compare feature adoption across customer segments. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

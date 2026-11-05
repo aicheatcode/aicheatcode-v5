@@ -1,0 +1,21 @@
+{
+  "id": "MA-120740",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 27",
+  "text": "Banding kos per 100 ml bagi produk contoh: A = RM8 untuk 500 ml; B = RM11 untuk 800 ml. Tunjuk kedua-dua kiraan dan pilihan lebih murah per 100 ml. Jangan anggap kualiti sama.",
+  "source": "30_hari_tiktok_prompt_hasil_qa.md",
+  "location": "Prompt ke-27",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "SAMPEL 1 PUSINGAN (sebahagian)",
+  "row": 658,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Banding kos per 100 ml bagi produk contoh: A = RM8 untuk 500 ml; B = RM11 untuk 800 ml. Tunjuk…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 27.",
+  "solution": "Tugasan: Episod 27. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt sampel editorial",
+  "qa": "BELUM DIUJI – INFERENS"
+}

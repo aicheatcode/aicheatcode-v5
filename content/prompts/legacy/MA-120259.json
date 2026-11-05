@@ -1,0 +1,21 @@
+{
+  "id": "MA-120259",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Draft a vision statement for the product",
+  "text": "Based on this long-term goal and user need, write a concise product vision statement. Keep it inspiring and grounded in real outcomes. [Insert product goal]",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B21",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 870,
+  "problem": "Keperluan teknikal untuk “Draft a vision statement for the product” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[Insert product goal]",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Draft a vision statement for the product.",
+  "solution": "Tugasan: Draft a vision statement for the product. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

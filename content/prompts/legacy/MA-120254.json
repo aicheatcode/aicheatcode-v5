@@ -1,0 +1,21 @@
+{
+  "id": "MA-120254",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Compare tech stack options",
+  "text": "Compare the pros and cons of integrating [technology/tool A] vs. [technology/tool B] into our product. Focus on scalability, cost, support, and developer experience. Include citations.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "product!B11",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 857,
+  "problem": "Keperluan teknikal untuk “Compare tech stack options” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[technology/tool A]; [technology/tool B]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Compare tech stack options.",
+  "solution": "Tugasan: Compare tech stack options. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

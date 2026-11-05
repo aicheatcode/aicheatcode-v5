@@ -1,0 +1,21 @@
+{
+  "id": "MA-120883",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Prompt nota jadi kuiz",
+  "text": "Jadi rakan kuiz saya. Guna hanya nota di bawah sebagai rujukan.\nTanya satu soalan pendek pada satu masa dalam BM Malaysia. Jangan beri jawapan sebelum saya menjawab.\nSelepas saya jawab, semak jawapan saya dan petik ayat nota yang menyokong semakan.\nJika maklumat tiada, sebut “Tiada dalam nota”. Jangan tambah fakta luar.\nSelepas tiga soalan, senaraikan perkara yang perlu saya ulang kaji.\nNOTA: [Tampal nota anda]",
+  "source": "prompt.txt",
+  "location": "Fail teks penuh",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 405,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Prompt nota jadi kuiz” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[Tampal nota anda]",
+  "output": "Spesifikasi atau prototaip sistem, tertakluk kepada ujian fungsi dan keselamatan.",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami? Fokus: Prompt nota jadi kuiz.",
+  "solution": "Tugasan: Prompt nota jadi kuiz. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt pendidikan",
+  "qa": "BELUM DIUJI – INFERENS"
+}

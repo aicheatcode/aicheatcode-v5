@@ -1,0 +1,21 @@
+{
+  "id": "MA-120279",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Investigate zero trust frameworks",
+  "text": "I'm a Security Architect working on adopting a zero trust model. Research leading frameworks (e.g., NIST 800-207) and recent updates to best practices in 2024–2025. Include real-world implementation case studies where possible. Provide a summarized comparison and an executive-ready briefing.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B12",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 890,
+  "problem": "Keperluan teknikal untuk “Investigate zero trust frameworks” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "Masukkan keperluan sistem, pengguna, teknologi dan kekangan (cadangan)",
+  "output": "Spesifikasi, aliran UI/UX, kod atau pelan pembangunan (hasil sasaran, belum diuji)",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Investigate zero trust frameworks.",
+  "solution": "Tugasan: Investigate zero trust frameworks. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

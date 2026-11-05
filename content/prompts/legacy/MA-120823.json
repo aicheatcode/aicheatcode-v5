@@ -1,0 +1,21 @@
+{
+  "id": "MA-120823",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 50",
+  "text": "Reka stopping rules untuk workflow menulis dan menyemak iklan. Hentikan apabila semua dakwaan disokong, atau apabila had pusingan, masa atau kos dicapai. Jika bukti tiada, pulangkan isu kepada pemilik. Jangan menganggap pengulangan AI boleh menghasilkan bukti baharu.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-50",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 698,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Reka stopping rules untuk workflow menulis dan menyemak iklan. Hentikan apabila semua dakwaan…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 50.",
+  "solution": "Tugasan: Episod 50. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

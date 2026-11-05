@@ -1,0 +1,21 @@
+{
+  "id": "MA-120079",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Jualan & Prospek",
+  "title": "Illustrate key sales personas",
+  "text": "Create professional illustrations for 3 personas: (1) CFO of a mid-market company, (2) VP of IT at a global enterprise, and (3) Operations Manager at a logistics firm. Style should be flat and modern, ideal for use in a one-pager or training slide.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "sales!B51",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 435,
+  "problem": "Analisis atau keputusan perniagaan tentang “Illustrate key sales personas” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "Masukkan data perniagaan sahih, pasaran, tempoh dan sasaran (cadangan)",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Illustrate key sales personas.",
+  "solution": "Tugasan: Illustrate key sales personas. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

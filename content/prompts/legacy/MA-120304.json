@@ -1,0 +1,21 @@
+{
+  "id": "MA-120304",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Putting together a plan",
+  "text": "I am a hospitalist managing a 74-year-old woman admitted with decompensated heart failure and worsening kidney function. Provide a problem-based assessment and plan covering volume management, medication adjustments, and discharge planning.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B16",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 249,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a hospitalist managing a 74-year-old woman admitted with decompensated heart failure and…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Putting together a plan.",
+  "solution": "Tugasan: Putting together a plan. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

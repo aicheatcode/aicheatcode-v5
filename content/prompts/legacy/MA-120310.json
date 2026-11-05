@@ -1,0 +1,21 @@
+{
+  "id": "MA-120310",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Retrieving and applying clinical references",
+  "text": "I am a neurologist following a 79-year-old patient who had an ischemic stroke 2 years ago with minimal residual deficits. At his most recent visit, he reported memory decline, including losing his phone, and has become more irritable. His functional status in daily activities is mostly preserved. Should these symptoms raise suspicion for dementia, or are they more consistent with normal age-related cognitive changes? Provide a differential diagnosis and explain why it’s likely or not.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B74",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 250,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «I am a neurologist following a 79-year-old patient who had an ischemic stroke 2 years ago with…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "Spesifikasi atau prototaip sistem, tertakluk kepada ujian fungsi dan keselamatan.",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap? Fokus: Retrieving and applying clinical references.",
+  "solution": "Tugasan: Retrieving and applying clinical references. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan. Hasil bukan pengganti penilaian klinikal atau nasihat kesihatan profesional.",
+  "cta": "Gunakan sebagai draf pembelajaran; untuk keputusan klinikal, sahkan dengan profesional kesihatan bertauliah.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

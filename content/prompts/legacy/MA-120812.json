@@ -1,0 +1,21 @@
+{
+  "id": "MA-120812",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 39",
+  "text": "Tulis arahan kemas kini untuk produk HTML luar talian tanpa auto-update. Terangkan cara melihat versi, mendapatkan fail baharu melalui saluran rasmi dan menyimpan salinan lama jika perlu. Jangan reka pautan muat turun atau janji kemas kini percuma seumur hidup.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-39",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 681,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Tulis arahan kemas kini untuk produk HTML luar talian tanpa auto-update. Terangkan cara melihat…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 39.",
+  "solution": "Tugasan: Episod 39. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

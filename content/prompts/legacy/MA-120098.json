@@ -1,0 +1,21 @@
+{
+  "id": "MA-120098",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Evaluate this student essay using clear, student-friendly language",
+  "text": "Evaluate this student essay using clear, student-friendly language. Include feedback on clarity, organization, grammar, evidence, and overall argument. Keep it constructive and include [x] suggestions for improvement.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A87",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 387,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Evaluate this student essay using clear, student-friendly language” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 87. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120303",
+  "category": "Operasi & Perkhidmatan Profesional",
+  "type": "Kesihatan & Profesional",
+  "title": "Prompt tanpa tajuk",
+  "text": "Generate a prioritized differential diagnosis and explain how patellofemoral pain syndrome can be distinguished from muscle strain, costochondritis, and stress-related symptoms using history, physical examination, and basic diagnostic evaluation.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "HEALTH CARE!B14",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 247,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Generate a prioritized differential diagnosis and explain how patellofemoral pain syndrome can be…",
+  "use": "Mendokumen dan menyeragamkan kerja profesional",
+  "inputs": "Masukkan proses semasa, peranan, bukti dan keperluan kawalan (cadangan)",
+  "output": "SOP, memo, analisis dan laporan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan operasi perlu dibuat, tetapi semakan sumber dan risiko belum lengkap?",
+  "solution": "Tugasan: Prompt tanpa tajuk. Tetapkan tujuan, bidang kuasa atau konteks, data yang sah dan penilai bertanggungjawab; semak output sebelum digunakan.",
+  "cta": "Dapatkan semakan profesional yang sesuai sebelum menggunakan hasil untuk keputusan berisiko tinggi.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

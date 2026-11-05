@@ -1,0 +1,21 @@
+{
+  "id": "MA-120870",
+  "category": "Video, Audio & Multimedia",
+  "type": "Video AI & Sinematografi",
+  "title": "Documentary Underscore",
+  "text": "Bertindak sebagai pakar berpengalaman dalam cinematic dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Muzik latar dokumentari tentang pemuliharaan sungai tempatan. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Hasilkan cue sheet 3 babak, instrumentasi akustik, dinamik emosi dan ruang suara vo. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22038",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 1062,
+  "problem": "Hasil untuk projek «Muzik latar dokumentari tentang pemuliharaan sungai tempatan.» belum disediakan mengikut keperluan teknikal, visual atau editorial yang boleh…",
+  "use": "Merancang penghasilan video atau audio",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Idea video ada, tetapi jalan cerita dan arahan adegan masih kabur? Fokus: Documentary Underscore.",
+  "solution": "Tugasan: Documentary Underscore. Lengkapkan naratif, sasaran penonton, adegan, durasi dan arah audio/visual sebelum menggunakan prompt asal; semak kesinambungan.",
+  "cta": "Uji satu adegan dahulu, semak kesinambungan, kemudian lanjutkan ke video penuh.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

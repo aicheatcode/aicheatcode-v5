@@ -1,0 +1,21 @@
+{
+  "id": "MA-120797",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 24",
+  "text": "A fictional adult presenter stands still beside a white table. Subject movement: only a small natural head turn. Camera movement: slow forward dolly, maintaining eye-level framing. Soft studio light. No zoom, no orbit, no cuts. No on-screen text.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-24",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 651,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «A fictional adult presenter stands still beside a white table. Subject movement: only a small natural…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 24.",
+  "solution": "Tugasan: Episod 24. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

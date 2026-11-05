@@ -1,0 +1,21 @@
+{
+  "id": "MA-120116",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create three real-world scenario tasks for [grade level] to practice [skill/subject/topic/concept].",
+  "text": "Create three real-world scenario tasks for [grade level] to practice [skill/subject/topic/concept].",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A189",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 385,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create three real-world scenario tasks for [grade level] to practice…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[grade level]; [skill/subject/topic/concept]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 189. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

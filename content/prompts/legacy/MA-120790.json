@@ -1,0 +1,21 @@
+{
+  "id": "MA-120790",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 17",
+  "text": "Generate an empty white studio tabletop for a product composite. Soft key light from upper left, subtle surface texture, clean centre area, no objects, no text, no logos. Leave enough space for a tall bottle. The product will be added separately from its original photograph.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-17",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 627,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Generate an empty white studio tabletop for a product composite. Soft key light from upper left…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 17.",
+  "solution": "Tugasan: Episod 17. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

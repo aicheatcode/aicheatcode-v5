@@ -1,0 +1,21 @@
+{
+  "id": "MA-120783",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 10",
+  "text": "Anda menyemak pelan pelancaran kit digital esok. Salinan jualan siap, tetapi pautan muat turun dan akses telefon belum diuji. Senaraikan tiga cara pelan boleh gagal, tanda awal, pencegahan dan pemilik tugas yang masih perlu ditetapkan. Jangan beri skor risiko palsu tanpa data.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-10",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 606,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Anda menyemak pelan pelancaran kit digital esok. Salinan jualan siap, tetapi pautan muat turun dan…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 10.",
+  "solution": "Tugasan: Episod 10. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

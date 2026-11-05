@@ -1,0 +1,21 @@
+{
+  "id": "MA-120047",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Kewangan & Analisis Perniagaan",
+  "title": "Summarize audit findings",
+  "text": "Summarize key findings from our internal audit. Use this document: [insert findings]. Output should be a summary for executives, with 3 themes and recommended next steps.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "finance !B29",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 465,
+  "problem": "Analisis atau keputusan perniagaan tentang “Summarize audit findings” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[insert findings]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Summarize audit findings.",
+  "solution": "Tugasan: Summarize audit findings. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

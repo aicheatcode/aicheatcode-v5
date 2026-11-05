@@ -1,0 +1,21 @@
+{
+  "id": "MA-120813",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 40",
+  "text": "Reka struktur kad prompt untuk penerangan produk. Medan wajib: tugas, input diperlukan, prompt, bentuk output, batasan, contoh ilustrasi dan checklist semakan. Gunakan produk rekaan tanpa harga atau dakwaan prestasi. Jangan menjanjikan hasil yang seragam bagi semua model.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-40",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 685,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Reka struktur kad prompt untuk penerangan produk. Medan wajib: tugas, input diperlukan, prompt…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 40.",
+  "solution": "Tugasan: Episod 40. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

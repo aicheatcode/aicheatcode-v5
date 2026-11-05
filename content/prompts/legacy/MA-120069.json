@@ -1,0 +1,21 @@
+{
+  "id": "MA-120069",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Jualan & Prospek",
+  "title": "Create a sales enablement one-pager",
+  "text": "Create a one-pager to help reps pitch [product name] to [persona]. Include key benefits, features, common use cases, and competitor differentiators. Format as copy-ready enablement doc.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "sales!B31",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 422,
+  "problem": "Analisis atau keputusan perniagaan tentang “Create a sales enablement one-pager” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[product name]; [persona]",
+  "output": "Pelan perniagaan, analisis, jadual atau cadangan jualan (hasil sasaran, belum diuji)",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Create a sales enablement one-pager.",
+  "solution": "Tugasan: Create a sales enablement one-pager. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

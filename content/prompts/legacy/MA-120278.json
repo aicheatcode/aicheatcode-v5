@@ -1,0 +1,21 @@
+{
+  "id": "MA-120278",
+  "category": "Teknologi, Produk & Pembangunan",
+  "type": "Produk Digital & Teknologi",
+  "title": "Compare AI observability tools",
+  "text": "I'm an IT Manager at [insert company]. I’m evaluating observability platforms. Research current offerings, pricing, supported environments, and key differentiators in 2025. Include citations and summarize insights in a comparison table with a recommendation for a mid-size engineering org.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "IT!B11",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 854,
+  "problem": "Keperluan teknikal untuk “Compare AI observability tools” belum dirangka atau diuji.",
+  "use": "Mereka bentuk produk dan sistem digital",
+  "inputs": "[insert company]",
+  "output": "Perbandingan/analisis berstruktur dengan penjelasan, sumber atau ukuran yang relevan.",
+  "hook": "Idea produk ada, tetapi skop, aliran pengguna atau ujian belum tersusun? Fokus: Compare AI observability tools.",
+  "solution": "Tugasan: Compare AI observability tools. Tetapkan keperluan fungsi, aliran pengguna, skema data, sempadan keselamatan dan kriteria ujian sebelum membangunkan output.",
+  "cta": "Jalankan pada spesifikasi sebenar; uji fungsi, kes tepi dan keselamatan sebelum digunakan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

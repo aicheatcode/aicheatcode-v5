@@ -1,0 +1,21 @@
+{
+  "id": "MA-120816",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 43",
+  "text": "Reka rekod kelulusan untuk workflow penghantaran e-mel: action_id, penerima, hash kandungan, versi, pelulus dan status. Nyatakan perubahan yang membatalkan kelulusan. Jangan hantar e-mel; hasilkan reka bentuk kawalan sahaja.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-43",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 688,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Reka rekod kelulusan untuk workflow penghantaran e-mel: action_id, penerima, hash kandungan, versi…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 43.",
+  "solution": "Tugasan: Episod 43. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "MA-120120",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Summarize the key findings and implications of this academic paper.",
+  "text": "Summarize the key findings and implications of this academic paper.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A213",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 413,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Summarize the key findings and implications of this academic paper.” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 213. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

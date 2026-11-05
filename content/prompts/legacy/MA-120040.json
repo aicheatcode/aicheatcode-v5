@@ -1,0 +1,21 @@
+{
+  "id": "MA-120040",
+  "category": "Perniagaan, Kewangan & Jualan",
+  "type": "Kewangan & Analisis Perniagaan",
+  "title": "Model cash flow scenarios",
+  "text": "Model 3 cash flow scenarios based on these variables: [insert inputs such as revenue range, delays, or costs]. Output as a table with assumptions, key drivers, and estimated cash impact.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "finance !B17",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 461,
+  "problem": "Analisis atau keputusan perniagaan tentang “Model cash flow scenarios” memerlukan data dan pembuktian.",
+  "use": "Membantu keputusan dan pelaksanaan perniagaan",
+  "inputs": "[insert inputs such as revenue range, delays, or costs]",
+  "output": "Jadual berstruktur; ketepatan angka dan sumber mesti diperiksa.",
+  "hook": "Keputusan perniagaan penting, tetapi input atau analisis belum mencukupi? Fokus: Model cash flow scenarios.",
+  "solution": "Tugasan: Model cash flow scenarios. Masukkan angka, pasaran dan tempoh yang diketahui; nyatakan andaian dan sahkan pengiraan sebelum membuat keputusan.",
+  "cta": "Masukkan data sebenar dan sahkan angka, andaian serta risiko sebelum membuat keputusan.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

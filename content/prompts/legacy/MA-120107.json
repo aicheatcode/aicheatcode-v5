@@ -1,0 +1,21 @@
+{
+  "id": "MA-120107",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Write a polite email to parents updating them on this week's homework assignments and reminding them about the upcoming parent-teacher conference.",
+  "text": "Write a polite email to parents updating them on this week's homework assignments and reminding them about the upcoming parent-teacher conference.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A140",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 418,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Write a polite email to parents updating them on this week's homework assignments and…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 140. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

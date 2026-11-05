@@ -1,0 +1,21 @@
+{
+  "id": "MA-120856",
+  "category": "Video, Audio & Multimedia",
+  "type": "Audio & Podcast",
+  "title": "Audio Cleanup Brief",
+  "text": "Bertindak sebagai pakar berpengalaman dalam audio editing dengan pendekatan berasaskan brief dan QA profesional. PROJEK SEBENAR: Rakaman temuduga berangin yang memerlukan penjelasan suara tanpa bunyi robotik. KONTEKS: lokasi [LOKASI], audiens [AUDIENS], keperluan utama [OBJEKTIF], jenama [JENAMA], bahasa output [BAHASA]. TUGAS: Nyatakan proses noise reduction, de-esser, gate ringan, lufs dan semakan a/b. Sediakan hasil kerja siap guna dalam bahagian: brief terisi, spesifikasi utama, draf/artifak akhir terperinci, contoh penggunaan sebenar, senarai aset yang diperlukan, dan checklist QA. Sekiranya input harga, statistik, kesaksian, identiti atau bahan sumber belum diberikan, tandakan TIDAK DISAHKAN dan jangan reka maklumat. Jelaskan perkara yang memerlukan kelulusan manusia atau ujian sebelum penerbitan.",
+  "source": "AICheatcode_V7_Added_Prompts.txt",
+  "location": "item 22024",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 973,
+  "problem": "Hasil untuk projek «Rakaman temuduga berangin yang memerlukan penjelasan suara tanpa bunyi robotik.» belum disediakan mengikut keperluan teknikal, visual atau…",
+  "use": "Merancang penghasilan video atau audio",
+  "inputs": "[LOKASI]; [AUDIENS]; [OBJEKTIF]; [JENAMA]",
+  "output": "Skrip, storyboard, senarai babak atau rubrik semakan (hasil sasaran, belum diuji)",
+  "hook": "Idea video ada, tetapi jalan cerita dan arahan adegan masih kabur? Fokus: Audio Cleanup Brief.",
+  "solution": "Tugasan: Audio Cleanup Brief. Lengkapkan naratif, sasaran penonton, adegan, durasi dan arah audio/visual sebelum menggunakan prompt asal; semak kesinambungan.",
+  "cta": "Uji satu adegan dahulu, semak kesinambungan, kemudian lanjutkan ke video penuh.",
+  "recordType": "Kurasi website V7",
+  "qa": "BELUM DIUJI – INFERENS"
+}

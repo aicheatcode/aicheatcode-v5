@@ -1,0 +1,21 @@
+{
+  "id": "MA-120118",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Generate a lecture outline for a 90-minute class on [topic], including examples and discussion questions.",
+  "text": "Generate a lecture outline for a 90-minute class on [topic], including examples and discussion questions.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A203",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 392,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Generate a lecture outline for a 90-minute class on [topic], including examples and…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "[topic]",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 203. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

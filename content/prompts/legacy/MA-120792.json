@@ -1,0 +1,21 @@
+{
+  "id": "MA-120792",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 19",
+  "text": "Create a vertical 4:5 editorial product background. One abstract blue glass sculpture on the right third. Keep the left half white and visually quiet for a headline to be added later. Soft realistic shadows, no text, no letters, no logos.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-19",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 633,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Create a vertical 4:5 editorial product background. One abstract blue glass sculpture on the right…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 19.",
+  "solution": "Tugasan: Episod 19. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

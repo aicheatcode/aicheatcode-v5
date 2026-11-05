@@ -1,0 +1,21 @@
+{
+  "id": "MA-120110",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Summarize the key points from today's faculty meeting and highlight action items for follow-up.",
+  "text": "Summarize the key points from today's faculty meeting and highlight action items for follow-up.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A155",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 414,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Summarize the key points from today's faculty meeting and highlight action items for follow-up.” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 155. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}

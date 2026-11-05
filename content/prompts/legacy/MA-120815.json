@@ -1,0 +1,21 @@
+{
+  "id": "MA-120815",
+  "category": "Prompt Engineering & AI",
+  "type": "Reka Bentuk Prompt AI",
+  "title": "Episod 42",
+  "text": "Bina polisi retry untuk workflow. Bezakan gangguan sementara, rate limit, input tidak sah dan akses ditolak. Nyatakan bila retry dibenarkan, had cubaan sebagai konfigurasi, serta laluan log dan semakan manusia. Jangan retry semua ralat atau jaminan penghantaran exactly-once.",
+  "source": "AICHEATCODE_50_Carousel_dan_Audit.md",
+  "location": "Prompt ke-42",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 687,
+  "problem": "Pengguna memerlukan hasil yang ditetapkan dalam arahan untuk «Bina polisi retry untuk workflow. Bezakan gangguan sementara, rate limit, input tidak sah dan akses…",
+  "use": "Mengarah AI dengan lebih tepat",
+  "inputs": "Masukkan matlamat, sasaran, konteks dan definisi kejayaan (cadangan)",
+  "output": "Brief tugasan, prompt berstruktur, senarai semak dan rubrik QA (hasil sasaran, belum diuji)",
+  "hook": "Arahan AI sudah panjang, tetapi hasil masih tidak mengikut keperluan? Fokus: Episod 42.",
+  "solution": "Tugasan: Episod 42. Nyatakan matlamat, konteks, input, format output dan kriteria semakan; jalankan prompt asal tanpa mengubah bahasa atau maksudnya.",
+  "cta": "Salin prompt asal, isi konteks sebenar dan bandingkan output dengan kriteria yang anda tetapkan.",
+  "recordType": "Prompt carousel",
+  "qa": "BELUM DIUJI – INFERENS"
+}

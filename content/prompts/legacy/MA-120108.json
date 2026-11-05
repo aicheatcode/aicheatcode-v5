@@ -1,0 +1,21 @@
+{
+  "id": "MA-120108",
+  "category": "Pendidikan & Pembelajaran",
+  "type": "Pembelajaran & Pendidikan",
+  "title": "Create a student progress report highlighting strengths, areas for improvement, and suggested next steps for learning.",
+  "text": "Create a student progress report highlighting strengths, areas for improvement, and suggested next steps for learning.",
+  "source": "prompt aicheat code.xlsx",
+  "location": "any works!A145",
+  "duplicate": "UNIK TEKS",
+  "testStatus": "NOT TESTED",
+  "row": 380,
+  "problem": "Bahan pengajaran atau sokongan pembelajaran untuk “Create a student progress report highlighting strengths, areas for improvement, and suggested…” belum disediakan.",
+  "use": "Memudahkan pengajaran dan pembelajaran",
+  "inputs": "Masukkan tahap pelajar, topik, objektif dan format penilaian (cadangan)",
+  "output": "Nota, latihan, kuiz atau rancangan pengajaran (hasil sasaran, belum diuji)",
+  "hook": "Topik sudah dipilih, tetapi cara menerangkannya masih sukar difahami?",
+  "solution": "Tugasan: Prompt 145. Tetapkan tahap pelajar, objektif, contoh dan kaedah pentaksiran; semak fakta serta kesesuaian hasil untuk pembelajaran.",
+  "cta": "Cuba pada satu topik; semak fakta dan sesuaikan kepada tahap pelajar.",
+  "recordType": "Prompt asal / kompilasi",
+  "qa": "BELUM DIUJI – INFERENS"
+}
