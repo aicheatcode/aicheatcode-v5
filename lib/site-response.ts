@@ -27,7 +27,16 @@ export async function servePage(request:Request,db?:any){
    pages.map(p=>'<url><loc>'+esc(canonicalOrigin+p)+'</loc></url>').join('')+'</urlset>';
   return new Response(xml,{headers:{'Content-Type':'application/xml; charset=utf-8','Cache-Control':'public, max-age=3600','X-Content-Type-Options':'nosniff'}});
  }
- const hub=renderHub(u);if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash)))return new Response(hub.html,{headers:pageHeaders});
+ // Site content is only public after an explicit publish operation. Drafts are never served here.
+ const slug=path==='/'?'home':['/belajar','/projek','/tentang'].includes(path)?path.slice(1):null;
+ let publishedPage=null;
+ if(db&&slug){
+  try {
+   const entry=await db.prepare('SELECT published_json FROM site_content WHERE slug=?').bind(slug).first();
+   if(entry?.published_json)publishedPage=JSON.parse(entry.published_json);
+  }catch(error){console.error('CMS public content fallback',error);}
+ }
+ const hub=renderHub(u,publishedPage);if(hub&&!(path==='/'&&(u.searchParams.has('legacy')||u.hash)))return new Response(hub.html,{headers:pageHeaders});
  let m=titles[path],detail='',canonicalPath=path;
  if(path.startsWith('/prompt/')){
   const id=path.slice(8);if(id.startsWith('LOCAL-'))m=['Versi peribadi','Versi ini hanya tersedia pada pelayar yang menyimpannya.'];
