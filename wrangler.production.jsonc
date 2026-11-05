@@ -7,6 +7,7 @@
   "no_bundle": true,
   "workers_dev": true,
   "preview_urls": false,
+  "routes": [{"pattern": "cannybrainy.com", "custom_domain": true}],
   "assets": { "directory": "dist/client" },
   "observability": { "enabled": true },
   "d1_databases": [
