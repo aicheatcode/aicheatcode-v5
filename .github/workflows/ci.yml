@@ -78,6 +78,10 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_ACCESS_TEAM_DOMAIN: ${{ vars.CF_ACCESS_TEAM_DOMAIN }}
+          CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
+          CMS_OWNER_EMAIL: ${{ secrets.CMS_OWNER_EMAIL }}
+          ACCESS_PROTECTED_HOSTS: ${{ vars.ACCESS_PROTECTED_HOSTS }}
         shell: bash
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
@@ -85,6 +89,12 @@ jobs:
             echo '::notice::BLOCKED: add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to GitHub Secrets.'
             echo '## Cloudflare production: BLOCKED' >> "$GITHUB_STEP_SUMMARY"
             echo 'Required Cloudflare secrets are missing. No database or Worker changes were attempted; production is not PASS.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ -z "$CF_ACCESS_TEAM_DOMAIN" ] || [ -z "$CF_ACCESS_AUD" ] || [ -z "$CMS_OWNER_EMAIL" ] || [ -z "$ACCESS_PROTECTED_HOSTS" ]; then
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::BLOCKED: Configure Cloudflare Access team, AUD, owner secret and protected hostnames before deploying.'
+            echo '## Owner CMS: BLOCKED — Access bindings incomplete' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           echo 'ready=true' >> "$GITHUB_OUTPUT"
@@ -130,7 +140,7 @@ jobs:
           PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
           CF_ACCESS_TEAM_DOMAIN: ${{ vars.CF_ACCESS_TEAM_DOMAIN }}
           CF_ACCESS_AUD: ${{ vars.CF_ACCESS_AUD }}
-          CMS_OWNER_EMAIL: ${{ vars.CMS_OWNER_EMAIL }}
+          CMS_OWNER_EMAIL: ${{ secrets.CMS_OWNER_EMAIL }}
         run: pnpm run deploy:cloudflare
       - name: Upload production verification evidence
         if: always()
