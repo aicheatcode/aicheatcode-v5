@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="AICHEATCODE Perpustakaan Digital Tingkatan 1: buku PDF, nota ringkas, kad imbasan, kuiz automatik dan prompt AI setiap subjek.">
+  <title>AICHEATCODE | Perpustakaan Digital Tingkatan 1</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navigasi mata pelajaran">
+      <div class="brand"><small>EDUCATION / DIGITAL LIBRARY</small>AICHEATCODE<span class="dot">.</span></div>
+      <div class="sideheading">Pilih mata pelajaran</div>
+      <nav id="subjectList" class="subjects" aria-label="Senarai mata pelajaran"></nav>
+      <div class="sidefoot">Pembelajaran digital percuma<br>Tingkatan 1 · KSSM · BM / DLP<br>Nota dan kuiz latihan kendiri</div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <span class="overline">AICHEATCODE / LEARNING RESOURCES</span>
+        <span class="datepill">TINGKATAN 1 · KSSM</span>
+      </div>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="overline">PERPUSTAKAAN DIGITAL</div>
+        <h1 id="heroTitle">Belajar lebih mudah.<br>Semua subjek di sini.</h1>
+        <p>Baca buku digital, fahami nota ringkas, ulang kaji kad imbasan, jawab kuiz automatik, dan salin prompt AI mengikut mata pelajaran.</p>
+        <div class="heroMeta">
+          <span><b>11</b> mata pelajaran unik</span>
+          <span><b>44</b> kad imbasan</span>
+          <span><b>44</b> soalan kuiz</span>
+          <span id="heroProgress" aria-live="polite">0 / 11 subjek sudah dicuba</span>
+        </div>
+      </section>
+      <div class="controls">
+        <label class="sr-only" for="searchBooks">Cari subjek atau tajuk</label>
+        <input class="search" id="searchBooks" type="search" autocomplete="off" placeholder="Cari mata pelajaran atau konsep…">
+        <label class="sr-only" for="categoryFilter">Tapis kategori</label>
+        <select id="categoryFilter" class="filter" aria-label="Tapis kategori"></select>
+      </div>
+      <div class="contentHeader">
+        <div>
+          <div class="overline">KANDUNGAN MATA PELAJARAN</div>
+          <h2 id="activeSubject">Memuatkan mata pelajaran…</h2>
+          <p id="activeMeta"></p>
+        </div>
+        <span id="bestScore" class="badge">Belum kuiz</span>
+      </div>
+      <div class="work">
+        <div class="tabs" id="tabList" role="tablist" aria-label="Bahagian pembelajaran"></div>
+        <section id="section" class="section" role="tabpanel" aria-live="polite"></section>
+      </div>
+      <footer class="footer">
+        © AICHEATCODE · Bahan latihan pembelajaran yang disediakan berdasarkan topik buku teks pengguna.
+        PDF yang diimport kekal pada peranti masing-masing; fail hak cipta tidak diterbitkan secara automatik.
+        Kemajuan kuiz disimpan dalam pelayar, bukan akaun awan.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
