@@ -1,0 +1,24 @@
+name: AICHEATCODE Digital Library QA
+on:
+  push:
+    branches:
+      - import/v5-base64-20261103
+      - main
+    paths:
+      - public/apps/perpustakaan-tingkatan1/**
+      - scripts/test-edu-library.mjs
+      - .github/workflows/edu-library.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate digital library subjects, routes, quiz and content
+        run: node scripts/test-edu-library.mjs
