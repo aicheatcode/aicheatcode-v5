@@ -22,13 +22,9 @@ jobs:
           node-version: "22"
       - name: Validate digital library subjects, routes, quiz and content
         run: node scripts/test-edu-library.mjs
-      - name: Package standalone HTML website
-        run: |
-          cd public/apps/perpustakaan-tingkatan1
-          zip -q -r "$GITHUB_WORKSPACE/aicheatcode-tingkatan1-library.zip" index.html style.css content.js app.js README.md QA_REPORT.md
-      - name: Upload ready-to-deploy website package
+      - name: Upload ready-to-deploy website files
         uses: actions/upload-artifact@v4
         with:
           name: aicheatcode-tingkatan1-library
-          path: aicheatcode-tingkatan1-library.zip
+          path: public/apps/perpustakaan-tingkatan1/
           retention-days: 30
